@@ -1,0 +1,7 @@
+{
+  "default_path_text_encoding_simulated": "cp1251",
+  "notebook_cells_passed": 13,
+  "extra_encoding_setup_cells": 1,
+  "native_windows_session_executed": false,
+  "note": "Все 13 ячеек выполнены локально с эмуляцией системной кодировки Windows-1251. Нативная сессия Windows не создавалась."
+}

@@ -5,7 +5,7 @@
   "mathematical_responses_audited": 144,
   "all_responses_audited": 360,
   "software_tests": {
-    "passed": 28,
+    "passed": 29,
     "failed": 0,
     "errors": 0
   },
@@ -30,5 +30,6 @@
   ],
   "new_task_restoration_verified": false,
   "comments_language": "Russian",
-  "numeric_results_unchanged_after_translation": true
+  "numeric_results_unchanged_after_translation": true,
+  "windows_cp1251_notebook_validation": "passed_simulated"
 }

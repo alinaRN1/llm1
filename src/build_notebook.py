@@ -28,11 +28,11 @@ def main():
         md('## Набор оценки\n\nЭталоны заданы до запуска и не передавались моделям. '
            'Для чтения ниже показан вспомогательный русский перевод; входами моделей были '
            'румынские оригиналы из `data/questions.json`.'),
-        code('questions = json.loads((ROOT / "data/questions_ru.json").read_text())\n'
+        code('questions = json.loads((ROOT / "data/questions_ru.json").read_text(encoding="utf-8"))\n'
              'show_ru([{k:q[k] for k in ["id", "category", "question", "reference_answer"]} for q in questions])'),
         md('## Происхождение моделей\n\nGGUF F16 из Docker AI. Каждый манифест и файл проверен '
            'SHA-256. Регистр тега важен: SmolLM2 `360m-f16` содержит Instruct.'),
-        code('specs = json.loads((ROOT / "data/models_oci.lock.json").read_text())\n'
+        code('specs = json.loads((ROOT / "data/models_oci.lock.json").read_text(encoding="utf-8"))\n'
              'show_ru([{\n'
              '    "model": m["model"], "manifest_digest": m["manifest_digest"],\n'
              '    "GGUF_bytes": next(x["size"] for x in m["layers"] if x["file"] == "model.gguf")\n'
@@ -48,8 +48,8 @@ def main():
              'else:\n    print("Анализ сохранённого собственного эксперимента без повторной генерации.")'),
         md('## Полнота и целостность данных'),
         code('import hashlib\n'
-             'manifest = json.loads((RUN / "manifest.json").read_text())\n'
-             'rows = json.loads((RUN / "scored.json").read_text())\n'
+             'manifest = json.loads((RUN / "manifest.json").read_text(encoding="utf-8"))\n'
+             'rows = json.loads((RUN / "scored.json").read_text(encoding="utf-8"))\n'
              'assert manifest["status"] == "complete" and len(rows) == 360\n'
              'assert len({(r["model"], r["id"], r["mode"], r["repetition"]) for r in rows}) == 360\n'
              'assert all("audit" in r for r in rows)\n'
@@ -70,7 +70,7 @@ def main():
         code('show_ru(aggregate[["model", "mode", "ttft_median_ms", "latency_median_ms", '
              '"latency_p95_ms", "decode_tps_median", "reference_ppl_token_weighted", "truncation_rate"]].to_dict("records"))\n'
              'display(Image(filename=str(RUN / "comparison.png"), width=1100))'),
-        code('resources = json.loads((RUN / "resources.json").read_text())\n'
+        code('resources = json.loads((RUN / "resources.json").read_text(encoding="utf-8"))\n'
              'show_ru([{\n'
              '    "model": r["model"], "weights_GiB": r["weight_bytes"] / 2**30,\n'
              '    "peak_RSS_GiB": r["sampled_peak_rss_bytes"] / 2**30,\n'
@@ -80,8 +80,8 @@ def main():
         md('## Неопределённость и парные сравнения\n\n'
            'Единица перевыборки — вопрос; его повторы остаются вместе. '
            'Интервалы Уилсона используют первый повтор с n=12/8. Бутстреп разведочный.'),
-        code('show_ru(json.loads((RUN / "content_comparisons.json").read_text()))\n'
-             'show_ru(json.loads((RUN / "content_decoding_comparisons.json").read_text()))'),
+        code('show_ru(json.loads((RUN / "content_comparisons.json").read_text(encoding="utf-8")))\n'
+             'show_ru(json.loads((RUN / "content_decoding_comparisons.json").read_text(encoding="utf-8")))'),
         md('## Проверка математических решений\n\n'
            'Верный результат ≠ верные шаги ≠ полное решение. Проверка одна, выполнена '
            'ИИ-ассистентом без независимого оценщика-человека. Решения связаны с хешами текстов.'),
@@ -91,7 +91,7 @@ def main():
              '"steps_valid", "solution_complete", "note"]].head(16).to_dict("records"))'),
         md('## Обсуждение и ограничения'),
         code('from IPython.display import Markdown\n'
-             'display(Markdown((RUN / "discussion.md").read_text()))'),
+             'display(Markdown((RUN / "discussion.md").read_text(encoding="utf-8")))'),
         md('## Проверка программы\n\n'
            'Тесты подтверждают работу оценщика и обработки данных, а не качество языковых моделей.'),
         code('import xml.etree.ElementTree as ET\n'

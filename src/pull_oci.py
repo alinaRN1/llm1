@@ -74,9 +74,9 @@ def pull(repo, tag, destination, expected_manifest=None):
     if not (destination/'model.gguf').exists():
         raise ValueError('Пакет OCI не содержит модель GGUF')
     metadata['model_path']=str((destination/'model.gguf').relative_to(ROOT))
-    metadata['config']=json.loads((destination/'config.json').read_text())
+    metadata['config']=json.loads((destination/'config.json').read_text(encoding="utf-8"))
     metadata['annotations']=manifest.get('annotations',{})
-    (destination/'provenance.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2))
+    (destination/'provenance.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2), encoding="utf-8")
     return metadata
 
 
@@ -84,13 +84,13 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--locked',type=Path,help='Скачать неизменяемые версии по существующему файлу фиксации')
     args=parser.parse_args()
-    locked=json.loads(args.locked.read_text()) if args.locked else []
+    locked=json.loads(args.locked.read_text(encoding="utf-8")) if args.locked else []
     expected={m['model']:m['manifest_digest'] for m in locked}
     models=[]
     for repo,tag in SPECS:
         destination=ROOT/'.cache/oci'/repo.replace('/','_')/tag
         models.append(pull(repo,tag,destination,expected.get(repo+':'+tag)))
-        (ROOT/'data/models_oci.lock.json').write_text(json.dumps(models,ensure_ascii=False,indent=2))
+        (ROOT/'data/models_oci.lock.json').write_text(json.dumps(models,ensure_ascii=False,indent=2), encoding="utf-8")
 
 
 if __name__=='__main__':

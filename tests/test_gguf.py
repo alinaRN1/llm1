@@ -29,11 +29,11 @@ def test_gguf_likelihood_uniform_distribution_and_overlapping_windows():
 def test_audit_cannot_attach_to_a_changed_answer(tmp_path):
     rows=[{'model':'fixture/model','id':13,'category':'matematica','answer':'changed',
            'mode':'greedy','repetition':0}]
-    (tmp_path/'scored.json').write_text(json.dumps(rows))
+    (tmp_path/'scored.json').write_text(json.dumps(rows), encoding="utf-8")
     decisions=[{'model':'fixture/model','id':13,'answer_sha256':response_hash('original'),
                 'content_correct':1,'steps_valid':0,'solution_complete':0,'note':'Проверка синтетического примера'}]
     path=tmp_path/'decisions.json'
-    path.write_text(json.dumps(decisions))
+    path.write_text(json.dumps(decisions), encoding="utf-8")
     with pytest.raises(ValueError,match='Нет заключения проверки'):
         audit(tmp_path,path)
 
@@ -42,14 +42,14 @@ def test_complete_audit_roundtrip(tmp_path):
     answer='RĂSPUNS FINAL: 623'
     rows=[{'model':'fixture/model','id':13,'category':'matematica','answer':answer,
            'mode':'greedy','repetition':0}]
-    (tmp_path/'scored.json').write_text(json.dumps(rows))
+    (tmp_path/'scored.json').write_text(json.dumps(rows), encoding="utf-8")
     decisions=[{'model':'fixture/model','id':13,'answer_sha256':response_hash(answer),
                 'content_correct':1,'steps_valid':0,'solution_complete':0,
                 'note':'Правильный результат без промежуточных вычислений'}]
     path=tmp_path/'decisions.json'
-    path.write_text(json.dumps(decisions))
+    path.write_text(json.dumps(decisions), encoding="utf-8")
     audit(tmp_path,path)
-    reviewed=json.loads((tmp_path/'scored.json').read_text())[0]
+    reviewed=json.loads((tmp_path/'scored.json').read_text(encoding="utf-8"))[0]
     assert reviewed['audit']['content_correct']==1
     assert reviewed['manual_steps_status']=='reviewed'
     assert reviewed['audit']['solution_complete']==0

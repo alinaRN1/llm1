@@ -19,10 +19,10 @@ LABELS={'ai/qwen2.5:0.5B-F16':'Qwen 0.5B','ai/smollm2:360m-f16':'Smol 360M',
 
 
 def analyze(run):
-    manifest=json.loads((run/'manifest.json').read_text())
+    manifest=json.loads((run/'manifest.json').read_text(encoding="utf-8"))
     if manifest['status']!='complete':
         raise ValueError('Незавершённый запуск: эмпирический рейтинг построить нельзя')
-    rows=json.loads((run/'scored.json').read_text())
+    rows=json.loads((run/'scored.json').read_text(encoding="utf-8"))
     data=pd.DataFrame(rows)
     expected=3*20*2*manifest['arguments']['repetitions']
     if len(data)!=expected or data.duplicated(['model','mode','id','repetition']).any():
@@ -69,7 +69,7 @@ def analyze(run):
                 factual_content_wilson_rep0=wilson(f0.content_correct.sum(),len(f0)),
                 math_content_wilson_rep0=wilson(m0.content_correct.sum(),len(m0)))
         grouped.append(group)
-    (run/'aggregate.json').write_text(json.dumps(grouped,ensure_ascii=False,indent=2))
+    (run/'aggregate.json').write_text(json.dumps(grouped,ensure_ascii=False,indent=2), encoding="utf-8")
     pd.DataFrame(grouped).to_csv(run/'aggregate.csv',index=False)
     write_russian_csv(run/'aggregate_ru.csv',grouped)
     # Парный бутстреп: выбираем вопросы, сохраняя вместе все их повторы.
@@ -85,7 +85,7 @@ def analyze(run):
             comparisons.append(dict(mode=mode,model_a=a,model_b=b,
                 difference=float(delta.mean()),cluster_bootstrap_95=np.quantile(samples,[.025,.975]).tolist(),
                 questions=len(delta),unit='question',interpretation='Разведочное сравнение без поправки на множественность'))
-    (run/'paired_comparisons.json').write_text(json.dumps(comparisons,indent=2))
+    (run/'paired_comparisons.json').write_text(json.dumps(comparisons,indent=2), encoding="utf-8")
     write_russian_csv(run/'paired_comparisons_ru.csv',comparisons)
     category_rows=[]
     frame=data.copy()
@@ -108,7 +108,7 @@ def analyze(run):
         samples=delta[rng.integers(0,len(delta),size=(10000,len(delta)))].mean(axis=1)
         mode_comparisons.append(dict(model=model,sampled_minus_greedy=float(delta.mean()),
             cluster_bootstrap_95=np.quantile(samples,[.025,.975]).tolist(),questions=len(delta)))
-    (run/'decoding_comparisons.json').write_text(json.dumps(mode_comparisons,indent=2))
+    (run/'decoding_comparisons.json').write_text(json.dumps(mode_comparisons,indent=2), encoding="utf-8")
     if audited:
         audited_comparisons=[]
         for mode in ['greedy','sampled']:
@@ -119,7 +119,7 @@ def analyze(run):
                 audited_comparisons.append(dict(mode=mode,model_a=a,model_b=b,
                     difference=float(delta.mean()),cluster_bootstrap_95=np.quantile(samples,[.025,.975]).tolist(),
                     metric='content_correct',questions=len(delta)))
-        (run/'content_comparisons.json').write_text(json.dumps(audited_comparisons,indent=2))
+        (run/'content_comparisons.json').write_text(json.dumps(audited_comparisons,indent=2), encoding="utf-8")
         write_russian_csv(run/'content_comparisons_ru.csv',audited_comparisons)
         content_modes=[]
         for model,df in data.groupby('model'):
@@ -128,7 +128,7 @@ def analyze(run):
             samples=delta[rng.integers(0,len(delta),size=(10000,len(delta)))].mean(axis=1)
             content_modes.append(dict(model=model,difference=float(delta.mean()),
                 cluster_bootstrap_95=np.quantile(samples,[.025,.975]).tolist(),questions=len(delta)))
-        (run/'content_decoding_comparisons.json').write_text(json.dumps(content_modes,indent=2))
+        (run/'content_decoding_comparisons.json').write_text(json.dumps(content_modes,indent=2), encoding="utf-8")
         write_russian_csv(run/'content_decoding_comparisons_ru.csv',content_modes)
     agg=pd.DataFrame(grouped)
     fig,axes=plt.subplots(2,3,figsize=(15,8))
@@ -173,7 +173,7 @@ def analyze(run):
         '```\n\nИнтервалы Уилсона относятся только к повтору 0 (12/8 вопросов). '
         'Бутстреп сохраняет группировку по вопросам. Проверка шагов: '+
         ('выполнена, заключения связаны с хешами.' if audited else 'ожидается.')+' '
-        'Денежная стоимость = оплачиваемые часы × реальный тариф; тариф не предоставлен.\n')
+        'Денежная стоимость = оплачиваемые часы × реальный тариф; тариф не предоставлен.\n', encoding="utf-8")
     print(run/'results_summary.md')
 
 

@@ -80,7 +80,7 @@ def test_wilson_small_sample():
 
 
 def test_dataset_and_reference_math():
-    data=json.loads((Path(__file__).resolve().parents[1]/'data/questions.json').read_text())
+    data=json.loads((Path(__file__).resolve().parents[1]/'data/questions.json').read_text(encoding="utf-8"))
     assert len(data)==20 and len({x['id'] for x in data})==20
     for item in data:
         if item['category']=='matematica':

@@ -31,7 +31,7 @@ SYSTEM = ('Ești un asistent educațional. Răspunde în limba română. '
 
 def dump(path, obj):
     temporary = path.with_suffix(path.suffix + '.tmp')
-    temporary.write_text(json.dumps(obj, ensure_ascii=False, indent=2, allow_nan=False))
+    temporary.write_text(json.dumps(obj, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
     temporary.replace(path)
 
 
@@ -150,12 +150,12 @@ def main():
     torch.set_num_interop_threads(1)
     revisions = {}
     if args.replay_manifest:
-        previous = json.loads(args.replay_manifest.read_text())
+        previous = json.loads(args.replay_manifest.read_text(encoding="utf-8"))
         revisions = {model:previous['artifacts'][model]['revision'] for model in MODELS}
     out = ROOT/'results/runs'/args.run_id
     out.mkdir(parents=True, exist_ok=False)
-    questions = json.loads((ROOT/'data/questions.json').read_text())
-    corpus = (ROOT/'data/corpus.txt').read_text()
+    questions = json.loads((ROOT/'data/questions.json').read_text(encoding="utf-8"))
+    corpus = (ROOT/'data/corpus.txt').read_text(encoding="utf-8")
     arguments = vars(args).copy()
     arguments['replay_manifest'] = str(args.replay_manifest) if args.replay_manifest else None
     manifest = dict(status='running', arguments=arguments, models=MODELS,
@@ -194,7 +194,7 @@ def main():
                     row = dict(model=model_id, revision=sha, id=item['id'], category=item['category'],
                                mode=mode, repetition=rep, seed=seed, **answer, **scores)
                     rows.append(row)
-                    with (out/'responses.jsonl').open('a') as f:
+                    with (out/'responses.jsonl').open('a', encoding="utf-8", newline="") as f:
                         f.write(json.dumps(row, ensure_ascii=False, allow_nan=False)+'\n')
                     print(f"{model_id} {len(rows)}: задание {item['id']} {mode}, повтор {rep}", flush=True)
                 native = perplexity(model, tokenizer, corpus)
@@ -215,7 +215,7 @@ def main():
             row['reference_revision'] = pinned[MODELS[0]][1]
             row['reference_ppl'] = perplexity(model, tokenizer, row['answer'])
         dump(out/'scored.json', rows)
-        with (out/'manual_review.csv').open('w') as f:
+        with (out/'manual_review.csv').open('w', encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
             writer.writerow(['model','mode','id','repetition','answer','final_correct_review',
                              'steps_valid_0_1','complete_0_1','note'])

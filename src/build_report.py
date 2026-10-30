@@ -30,11 +30,11 @@ def interval(values):
 
 
 def empirical(run):
-    manifest=json.loads((run/'manifest.json').read_text())
-    rows=json.loads((run/'scored.json').read_text())
-    aggregates=json.loads((run/'aggregate.json').read_text())
-    resources=json.loads((run/'resources.json').read_text())
-    audit=json.loads((run/'audit_metadata.json').read_text())
+    manifest=json.loads((run/'manifest.json').read_text(encoding="utf-8"))
+    rows=json.loads((run/'scored.json').read_text(encoding="utf-8"))
+    aggregates=json.loads((run/'aggregate.json').read_text(encoding="utf-8"))
+    resources=json.loads((run/'resources.json').read_text(encoding="utf-8"))
+    audit=json.loads((run/'audit_metadata.json').read_text(encoding="utf-8"))
     if manifest['status']!='complete' or audit['responses_reviewed']!=360 or len(rows)!=360:
         raise ValueError('Отчёт требует полного эксперимента и проверки 360 ответов')
     if any('audit' not in r for r in rows):
@@ -119,13 +119,13 @@ def empirical(run):
              'оплаты. Плата API за токены при локальном запуске равна 0; облачный тариф '
              'и энергопотребление не предоставлены и не измерены.\n\n')
     output+='## Парные сравнения\n\n'
-    comparisons=json.loads((run/'content_comparisons.json').read_text())
+    comparisons=json.loads((run/'content_comparisons.json').read_text(encoding="utf-8"))
     output+=table(['Режим','A − B','Разность, п.п.','ДИ 95%, п.п.'],[
         [MODES[r['mode']],NAMES[r['model_a']]+' − '+NAMES[r['model_b']],f"{100*r['difference']:.2f}",
          interval(r['cluster_bootstrap_95'])] for r in comparisons])
     output+='Метрика — правильность содержания на 20 вопросах с группировкой повторов. П.п. — процентные пункты. Интервалы разведочные, без поправки на множественные сравнения.\n\n'
     mode_rows=[]
-    mode_intervals=json.loads((run/'content_decoding_comparisons.json').read_text())
+    mode_intervals=json.loads((run/'content_decoding_comparisons.json').read_text(encoding="utf-8"))
     for model in manifest['models']:
         g=next(a for a in aggregates if a['model']==model and a['mode']=='greedy')
         s=next(a for a in aggregates if a['model']==model and a['mode']=='sampled')
@@ -151,15 +151,15 @@ def empirical(run):
     discussion=run/'discussion.md'
     if not discussion.exists():
         raise ValueError('Нужны выводы по измеренным результатам')
-    output+=discussion.read_text()+'\n\n'
+    output+=discussion.read_text(encoding="utf-8")+'\n\n'
     return output
 
 
 def appendices(run):
     output='# Приложение А. Вопросы и эталоны\n\n'
     output+='Ниже дан вспомогательный русский перевод. При измерении модели получали румынские оригиналы из `data/questions.json`. Перевод не использовался для повторного расчёта вероятностей или оценок.\n\n'
-    original={q['id']:q for q in json.loads((ROOT/'data/questions.json').read_text())}
-    for item in json.loads((ROOT/'data/questions_ru.json').read_text()):
+    original={q['id']:q for q in json.loads((ROOT/'data/questions.json').read_text(encoding="utf-8"))}
+    for item in json.loads((ROOT/'data/questions_ru.json').read_text(encoding="utf-8")):
         output+=f"## Задание {item['id']} — {item['category']}\n\n{item['question']}\n\n"
         output+='Эталон: '+item['reference_answer']+'.\n\n'
         source=original[item['id']]
@@ -168,7 +168,7 @@ def appendices(run):
         else:
             output+='Источник: '+source['source'].replace('intrarea','статья').replace('intrările','статьи')+'\n\n'
     output+='# Приложение Б. Воспроизводимость\n\n'
-    manifest=json.loads((run/'manifest.json').read_text())
+    manifest=json.loads((run/'manifest.json').read_text(encoding="utf-8"))
     output+='SHA-256 исходного набора: `'+manifest['dataset_sha256']+'`\n\n'
     output+='SHA-256 корпуса: `'+manifest['corpus_sha256']+'`\n\n'
     for model in manifest['artifacts']:
@@ -182,11 +182,11 @@ def appendices(run):
 
 
 def build(run):
-    source=(ROOT/'reports/template.md').read_text()
+    source=(ROOT/'reports/template.md').read_text(encoding="utf-8")
     source=source.replace('<!-- EMPIRICAL_RESULTS -->',empirical(run))
     source=source.replace('<!-- APPENDICES -->',appendices(run))
     target=ROOT/'reports/raport.md'
-    target.write_text(source)
+    target.write_text(source, encoding="utf-8")
     if not shutil.which('pandoc') or not shutil.which('xelatex'):
         raise RuntimeError('Для экспорта Word/PDF нужны Pandoc и XeLaTeX')
     subprocess.run(['pandoc',str(target),'-o',str(target.with_suffix('.docx')),'--toc'],cwd=ROOT/'reports',check=True)

@@ -34,7 +34,7 @@ SYSTEM=('Ești un asistent educațional. Răspunde în limba română. '
 
 def dump(path,obj):
     temp=path.with_suffix(path.suffix+'.tmp')
-    temp.write_text(json.dumps(obj,ensure_ascii=False,indent=2,allow_nan=False))
+    temp.write_text(json.dumps(obj,ensure_ascii=False,indent=2,allow_nan=False), encoding="utf-8")
     temp.replace(path)
 
 
@@ -138,10 +138,10 @@ def perplexity(llm,text,context=512,stride=256):
 
 
 def worker(run,index):
-    manifest=json.loads((run/'manifest.json').read_text())
+    manifest=json.loads((run/'manifest.json').read_text(encoding="utf-8"))
     args=manifest['arguments']
     spec=manifest['artifacts'][index]
-    questions=json.loads((ROOT/'data/questions.json').read_text())
+    questions=json.loads((ROOT/'data/questions.json').read_text(encoding="utf-8"))
     with MemoryMonitor() as memory:
         started=time.perf_counter()
         llm=load(spec,args['threads'])
@@ -154,7 +154,7 @@ def worker(run,index):
                for rep in range(args['repetitions'])]
         random.Random(20261030).shuffle(tasks)
         path=run/f'responses-{index}.jsonl'
-        with path.open('x') as file:
+        with path.open('x', encoding="utf-8", newline="") as file:
             for counter,(item,mode,rep) in enumerate(tasks,1):
                 answer=generate(llm,item['question'],mode,20261030+rep,args['max_new_tokens'])
                 scores=(math_scores(answer['answer'],item['value']) if item['category']=='matematica'
@@ -164,7 +164,7 @@ def worker(run,index):
                 file.write(json.dumps(row,ensure_ascii=False,allow_nan=False)+'\n')
                 file.flush()
                 print(f"{spec['model']}: {counter}/{len(tasks)}, задание {item['id']} {mode}",flush=True)
-        native=perplexity(llm,(ROOT/'data/corpus.txt').read_text())
+        native=perplexity(llm,(ROOT/'data/corpus.txt').read_text(encoding="utf-8"))
         llm.close()
     gguf=next(x for x in spec['layers'] if x['file']=='model.gguf')
     dump(run/f'resource-{index}.json',dict(model=spec['model'],revision=spec['manifest_digest'],
@@ -175,8 +175,8 @@ def worker(run,index):
 
 
 def reference_worker(run):
-    manifest=json.loads((run/'manifest.json').read_text())
-    rows=[json.loads(line) for i in range(3) for line in (run/f'responses-{i}.jsonl').read_text().splitlines()]
+    manifest=json.loads((run/'manifest.json').read_text(encoding="utf-8"))
+    rows=[json.loads(line) for i in range(3) for line in (run/f'responses-{i}.jsonl').read_text(encoding="utf-8").splitlines()]
     spec=manifest['artifacts'][0]
     llm=load(spec,manifest['arguments']['threads'])
     cache={}
@@ -191,10 +191,10 @@ def reference_worker(run):
             print(f'Референсная PPL: {i}/{len(rows)}',flush=True)
     llm.close()
     dump(run/'scored.json',rows)
-    with (run/'responses.jsonl').open('w') as file:
+    with (run/'responses.jsonl').open('w', encoding="utf-8", newline="") as file:
         for row in rows:
             file.write(json.dumps(row,ensure_ascii=False,allow_nan=False)+'\n')
-    with (run/'manual_review.csv').open('w') as file:
+    with (run/'manual_review.csv').open('w', encoding="utf-8", newline="") as file:
         writer=csv.writer(file)
         writer.writerow(['model','mode','id','repetition','answer','final_correct_review',
                          'steps_valid_0_1','complete_0_1','note'])
@@ -220,18 +220,18 @@ def main():
         return reference_worker(run)
     if args.repetitions<1 or not 1<=args.threads<=32 or args.max_new_tokens<1:
         parser.error('Недопустимые параметры эксперимента')
-    models=json.loads((ROOT/'data/models_oci.lock.json').read_text())
+    models=json.loads((ROOT/'data/models_oci.lock.json').read_text(encoding="utf-8"))
     if len(models)!=3:
         raise ValueError('Требуются ровно три проверенных артефакта моделей')
     run.mkdir(parents=True,exist_ok=args.resume)
-    cpu_info=Path('/proc/cpuinfo').read_text()
+    cpu_info=Path('/proc/cpuinfo').read_text(encoding="utf-8")
     cpu=next((line.split(':',1)[1].strip() for line in cpu_info.splitlines() if line.startswith('model name')),'unknown')
     manifest=dict(status='running',backend='llama-cpp-python',backend_version=llama_cpp.__version__,
         arguments={'repetitions':args.repetitions,'threads':args.threads,'max_new_tokens':args.max_new_tokens},
         models=[m['model'] for m in models],artifacts=models,system_prompt=SYSTEM,
         python=platform.python_version(),platform=platform.platform(),cpu=cpu,
         logical_cpus=psutil.cpu_count(),ram_bytes=psutil.virtual_memory().total,
-        cpu_quota=(Path('/sys/fs/cgroup/cpu.max').read_text().strip()
+        cpu_quota=(Path('/sys/fs/cgroup/cpu.max').read_text(encoding="utf-8").strip()
                    if Path('/sys/fs/cgroup/cpu.max').is_file() else 'недоступна'),
         gpu_used=False,weight_format='GGUF F16',context=1024,batch=512,logits_all=True,
         prefix_cache=False,seed=20261030,model_order_randomized=False,
@@ -240,7 +240,7 @@ def main():
         started_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()))
     reused=[]
     if args.resume:
-        previous=json.loads((run/'manifest.json').read_text())
+        previous=json.loads((run/'manifest.json').read_text(encoding="utf-8"))
         if previous['status']!='failed':
             raise ValueError('Возобновление допустимо только после остановленного неудачного запуска')
         for key in ['arguments','system_prompt','dataset_sha256','corpus_sha256','backend_version']:
@@ -253,8 +253,8 @@ def main():
             resource=run/f'resource-{i}.json'
             responses=run/f'responses-{i}.jsonl'
             if resource.exists() and responses.exists():
-                metadata=json.loads(resource.read_text())
-                rows=[json.loads(s) for s in responses.read_text().splitlines()]
+                metadata=json.loads(resource.read_text(encoding="utf-8"))
+                rows=[json.loads(s) for s in responses.read_text(encoding="utf-8").splitlines()]
                 if (metadata['model']==spec['model'] and metadata['revision']==spec['manifest_digest']
                     and len(rows)==40*args.repetitions and
                     len({(r['id'],r['mode'],r['repetition']) for r in rows})==len(rows)
@@ -270,7 +270,7 @@ def main():
                 print(f'Повторно используем проверенный завершённый блок {i}',flush=True)
                 continue
             subprocess.run([sys.executable,__file__,'--run-id',args.run_id,'--worker',str(i)],check=True)
-        resources=[json.loads((run/f'resource-{i}.json').read_text()) for i in range(3)]
+        resources=[json.loads((run/f'resource-{i}.json').read_text(encoding="utf-8")) for i in range(3)]
         dump(run/'resources.json',resources)
         subprocess.run([sys.executable,__file__,'--run-id',args.run_id,'--reference-worker'],check=True)
         manifest['status']='complete'

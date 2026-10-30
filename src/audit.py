@@ -12,8 +12,8 @@ def response_hash(text):
 
 
 def audit(run,decisions):
-    rows=json.loads((run/'scored.json').read_text())
-    decisions=json.loads(decisions.read_text())
+    rows=json.loads((run/'scored.json').read_text(encoding="utf-8"))
+    decisions=json.loads(decisions.read_text(encoding="utf-8"))
     lookup={}
     for decision in decisions:
         key=(decision['model'],decision['id'],decision['answer_sha256'])
@@ -40,12 +40,12 @@ def audit(run,decisions):
         if row['category']=='matematica':
             row['manual_steps_status']='reviewed'
         csv_rows.append({k:row[k] for k in ['model','mode','id','repetition','category','answer','answer_sha256']}|row['audit'])
-    (run/'scored.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2,allow_nan=False))
-    with (run/'audit.csv').open('w') as f:
+    (run/'scored.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2,allow_nan=False), encoding="utf-8")
+    with (run/'audit.csv').open('w', encoding="utf-8", newline="") as f:
         writer=csv.DictWriter(f,fieldnames=list(csv_rows[0]))
         writer.writeheader()
         writer.writerows(csv_rows)
-    with (run/'manual_review.csv').open('w') as f:
+    with (run/'manual_review.csv').open('w', encoding="utf-8", newline="") as f:
         selected=[r for r in csv_rows if r['category']=='matematica']
         writer=csv.DictWriter(f,fieldnames=list(selected[0]))
         writer.writeheader()
@@ -59,7 +59,7 @@ def audit(run,decisions):
                 'steps_valid':'Хотя бы один содержательный верный шаг по задаче без математических противоречий',
                 'solution_complete':'Правильный ответ со всеми требуемыми вычислениями и проверкой'},
         decisions_sha256=hashlib.sha256(json.dumps(decisions,sort_keys=True,ensure_ascii=False).encode()).hexdigest()),
-        ensure_ascii=False,indent=2))
+        ensure_ascii=False,indent=2), encoding="utf-8")
     print(f'Проверено {len(rows)} ответов; {len(lookup)} уникальных сочетаний модели, задания и текста')
 
 
