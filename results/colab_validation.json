@@ -1,0 +1,9 @@
+{
+  "notebook": "laborator_colab.ipynb",
+  "locally_executed_code_cells": 14,
+  "fresh_github_clone": "passed",
+  "uploaded_archive_bootstrap": "passed",
+  "existing_tests_passed": 28,
+  "google_colab_session_executed": false,
+  "note": "Все ячейки проверены локально на чистом клоне и архиве. Сессия в сервисе Google Colab не создавалась. Новый прогон моделей не выполнялся."
+}

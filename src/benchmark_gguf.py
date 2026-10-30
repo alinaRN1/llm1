@@ -231,7 +231,8 @@ def main():
         models=[m['model'] for m in models],artifacts=models,system_prompt=SYSTEM,
         python=platform.python_version(),platform=platform.platform(),cpu=cpu,
         logical_cpus=psutil.cpu_count(),ram_bytes=psutil.virtual_memory().total,
-        cpu_quota=Path('/sys/fs/cgroup/cpu.max').read_text().strip(),
+        cpu_quota=(Path('/sys/fs/cgroup/cpu.max').read_text().strip()
+                   if Path('/sys/fs/cgroup/cpu.max').is_file() else 'недоступна'),
         gpu_used=False,weight_format='GGUF F16',context=1024,batch=512,logits_all=True,
         prefix_cache=False,seed=20261030,model_order_randomized=False,
         dataset_sha256=hashlib.sha256((ROOT/'data/questions.json').read_bytes()).hexdigest(),
