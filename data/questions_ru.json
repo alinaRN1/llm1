@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "category": "История",
+    "question": "В каком году произошло Объединение румынских княжеств, известное как Малое объединение?",
+    "reference_answer": "1859",
+    "original_question": "În ce an a avut loc Unirea Principatelor Române (Mica Unire)?"
+  },
+  {
+    "id": 2,
+    "category": "История",
+    "question": "Кто в 1859 году был избран господарем и Молдавии, и Валахии?",
+    "reference_answer": "Александру Иоан Куза",
+    "original_question": "Cine a fost ales domnitor al Moldovei și al Țării Românești în 1859?"
+  },
+  {
+    "id": 3,
+    "category": "История",
+    "question": "В каком году 1 декабря в Алба-Юлии была принята резолюция об объединении Трансильвании с Румынией?",
+    "reference_answer": "1918",
+    "original_question": "În ce an s-a adoptat la Alba Iulia rezoluția unirii Transilvaniei cu România, la 1 decembrie?"
+  },
+  {
+    "id": 4,
+    "category": "История",
+    "question": "Какова столица Республики Молдова?",
+    "reference_answer": "Кишинёв (Chișinău)",
+    "original_question": "Care este capitala Republicii Moldova?"
+  },
+  {
+    "id": 5,
+    "category": "История",
+    "question": "Как называется мирный договор, подписанный 28 июня 1919 года между Германией и союзными державами?",
+    "reference_answer": "Версальский договор",
+    "original_question": "Cum se numește tratatul de pace semnat la 28 iunie 1919 între Germania și Puterile Aliate?"
+  },
+  {
+    "id": 6,
+    "category": "История",
+    "question": "Какой господарь Молдавии победил в битве при Васлуе в 1475 году?",
+    "reference_answer": "Штефан Великий",
+    "original_question": "Ce domnitor al Moldovei a câștigat bătălia de la Vaslui din 1475?"
+  },
+  {
+    "id": 7,
+    "category": "Румынский язык",
+    "question": "Какова форма множественного числа румынского существительного «cafea»?",
+    "reference_answer": "cafele",
+    "original_question": "Care este pluralul substantivului «cafea»?"
+  },
+  {
+    "id": 8,
+    "category": "Румынский язык",
+    "question": "Выберите синоним румынского слова «rapid»: «iute» или «greoi».",
+    "reference_answer": "iute",
+    "original_question": "Care este sinonimul lui «rapid»: «iute» sau «greoi»?"
+  },
+  {
+    "id": 9,
+    "category": "Румынский язык",
+    "question": "Выберите правильную румынскую форму: «ar trebui să vii» или «ar trebui să vi».",
+    "reference_answer": "ar trebui să vii",
+    "original_question": "Alege forma corectă: «ar trebui să vii» sau «ar trebui să vi»."
+  },
+  {
+    "id": 10,
+    "category": "Румынский язык",
+    "question": "Какой частью речи является «frumos» в румынском предложении «El cântă frumos»?",
+    "reference_answer": "Наречие (adverb)",
+    "original_question": "Ce parte de vorbire este «frumos» în propoziția «El cântă frumos»?"
+  },
+  {
+    "id": 11,
+    "category": "Румынский язык",
+    "question": "Выберите антоним румынского слова «adevăr»: «minciună» или «certitudine».",
+    "reference_answer": "minciună",
+    "original_question": "Care este antonimul lui «adevăr»: «minciună» sau «certitudine»?"
+  },
+  {
+    "id": 12,
+    "category": "Румынский язык",
+    "question": "Какова форма родительного-дательного падежа множественного числа с определённым артиклем у румынского существительного «elev»?",
+    "reference_answer": "elevilor",
+    "original_question": "Care este forma articulată de genitiv-dativ plural a substantivului «elev»?"
+  },
+  {
+    "id": 13,
+    "category": "Математика",
+    "question": "Вычислите 245 + 378. Покажите промежуточные вычисления.",
+    "reference_answer": "623",
+    "original_question": "Calculează 245 + 378. Arată calculele intermediare."
+  },
+  {
+    "id": 14,
+    "category": "Математика",
+    "question": "Вычислите 1000 − 457. Покажите промежуточные вычисления.",
+    "reference_answer": "543",
+    "original_question": "Calculează 1000 - 457. Arată calculele intermediare."
+  },
+  {
+    "id": 15,
+    "category": "Математика",
+    "question": "Вычислите 36 × 12. Покажите промежуточные вычисления.",
+    "reference_answer": "432",
+    "original_question": "Calculează 36 × 12. Arată calculele intermediare."
+  },
+  {
+    "id": 16,
+    "category": "Математика",
+    "question": "Вычислите 560 ÷ 8. Покажите проверку умножением.",
+    "reference_answer": "70",
+    "original_question": "Calculează 560 ÷ 8. Arată verificarea prin înmulțire."
+  },
+  {
+    "id": 17,
+    "category": "Математика",
+    "question": "Решите уравнение 2x + 5 = 17 и проверьте решение подстановкой.",
+    "reference_answer": "6",
+    "original_question": "Rezolvă ecuația 2x + 5 = 17 și verifică soluția prin substituție."
+  },
+  {
+    "id": 18,
+    "category": "Математика",
+    "question": "Решите уравнение 3x − 4 = 2 и проверьте решение подстановкой.",
+    "reference_answer": "2",
+    "original_question": "Rezolvă ecuația 3x - 4 = 2 și verifică soluția prin substituție."
+  },
+  {
+    "id": 19,
+    "category": "Математика",
+    "question": "Вычислите (15 + 5) × (10 − 7). Покажите промежуточные вычисления.",
+    "reference_answer": "60",
+    "original_question": "Calculează (15 + 5) × (10 - 7). Arată calculele intermediare."
+  },
+  {
+    "id": 20,
+    "category": "Математика",
+    "question": "Вычислите 7² + 5². Покажите промежуточные вычисления.",
+    "reference_answer": "74",
+    "original_question": "Calculează 7² + 5². Arată calculele intermediare."
+  }
+]

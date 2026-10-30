@@ -1,0 +1,80 @@
+[
+  {
+    "mode": "greedy",
+    "model_a": "ai/llama3.2:1B-F16",
+    "model_b": "ai/qwen2.5:0.5B-F16",
+    "difference": -0.05,
+    "cluster_bootstrap_95": [
+      -0.25,
+      0.1
+    ],
+    "questions": 20,
+    "unit": "question",
+    "interpretation": "\u0420\u0430\u0437\u0432\u0435\u0434\u043e\u0447\u043d\u043e\u0435 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435 \u0431\u0435\u0437 \u043f\u043e\u043f\u0440\u0430\u0432\u043a\u0438 \u043d\u0430 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c"
+  },
+  {
+    "mode": "greedy",
+    "model_a": "ai/llama3.2:1B-F16",
+    "model_b": "ai/smollm2:360m-f16",
+    "difference": 0.15,
+    "cluster_bootstrap_95": [
+      0.0,
+      0.3
+    ],
+    "questions": 20,
+    "unit": "question",
+    "interpretation": "\u0420\u0430\u0437\u0432\u0435\u0434\u043e\u0447\u043d\u043e\u0435 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435 \u0431\u0435\u0437 \u043f\u043e\u043f\u0440\u0430\u0432\u043a\u0438 \u043d\u0430 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c"
+  },
+  {
+    "mode": "greedy",
+    "model_a": "ai/qwen2.5:0.5B-F16",
+    "model_b": "ai/smollm2:360m-f16",
+    "difference": 0.2,
+    "cluster_bootstrap_95": [
+      0.05,
+      0.4
+    ],
+    "questions": 20,
+    "unit": "question",
+    "interpretation": "\u0420\u0430\u0437\u0432\u0435\u0434\u043e\u0447\u043d\u043e\u0435 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435 \u0431\u0435\u0437 \u043f\u043e\u043f\u0440\u0430\u0432\u043a\u0438 \u043d\u0430 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c"
+  },
+  {
+    "mode": "sampled",
+    "model_a": "ai/llama3.2:1B-F16",
+    "model_b": "ai/qwen2.5:0.5B-F16",
+    "difference": -0.15,
+    "cluster_bootstrap_95": [
+      -0.31666666666666665,
+      0.016666666666666663
+    ],
+    "questions": 20,
+    "unit": "question",
+    "interpretation": "\u0420\u0430\u0437\u0432\u0435\u0434\u043e\u0447\u043d\u043e\u0435 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435 \u0431\u0435\u0437 \u043f\u043e\u043f\u0440\u0430\u0432\u043a\u0438 \u043d\u0430 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c"
+  },
+  {
+    "mode": "sampled",
+    "model_a": "ai/llama3.2:1B-F16",
+    "model_b": "ai/smollm2:360m-f16",
+    "difference": 0.03333333333333333,
+    "cluster_bootstrap_95": [
+      0.0,
+      0.1
+    ],
+    "questions": 20,
+    "unit": "question",
+    "interpretation": "\u0420\u0430\u0437\u0432\u0435\u0434\u043e\u0447\u043d\u043e\u0435 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435 \u0431\u0435\u0437 \u043f\u043e\u043f\u0440\u0430\u0432\u043a\u0438 \u043d\u0430 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c"
+  },
+  {
+    "mode": "sampled",
+    "model_a": "ai/qwen2.5:0.5B-F16",
+    "model_b": "ai/smollm2:360m-f16",
+    "difference": 0.18333333333333332,
+    "cluster_bootstrap_95": [
+      0.05,
+      0.35
+    ],
+    "questions": 20,
+    "unit": "question",
+    "interpretation": "\u0420\u0430\u0437\u0432\u0435\u0434\u043e\u0447\u043d\u043e\u0435 \u0441\u0440\u0430\u0432\u043d\u0435\u043d\u0438\u0435 \u0431\u0435\u0437 \u043f\u043e\u043f\u0440\u0430\u0432\u043a\u0438 \u043d\u0430 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c"
+  }
+]

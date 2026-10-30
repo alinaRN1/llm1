@@ -1,0 +1,31 @@
+{
+  "status": "failed",
+  "arguments": {
+    "repetitions": 3,
+    "max_new_tokens": 160,
+    "threads": 4,
+    "cache": "/workspace/llm1/.cache/huggingface",
+    "run_id": "initial-validation"
+  },
+  "models": [
+    "Qwen/Qwen2.5-0.5B-Instruct",
+    "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  ],
+  "system_prompt": "Ești un asistent educațional. Răspunde în limba română. Pentru istorie și limba română scrie doar RĂSPUNS FINAL: <răspuns>. Pentru matematică arată calculele și verificarea, apoi scrie pe o linie separată RĂSPUNS FINAL: <valoare>.",
+  "python": "3.12.14",
+  "torch": "2.5.1+cpu",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "cpu": "",
+  "logical_cpus": 5,
+  "ram_bytes": 35743748096,
+  "gpu_used": false,
+  "dtype": "float32",
+  "seed": 20261030,
+  "dataset_sha256": "cad9356f3f0165250392923b5039037ef0c93cd2e178a66e0e75eba2b23b2af4",
+  "corpus_sha256": "ce7324173ec90acd9faca3c4d42321a55e1906d53d82f594816e26eea39ce2dd",
+  "started_utc": "2026-10-30T14:33:34Z",
+  "artifacts": {},
+  "error_type": "ProxyError",
+  "finished_utc": "2026-10-30T14:33:34Z"
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "sampled_minus_greedy": -0.11666666666666667,
+    "cluster_bootstrap_95": [
+      -0.3,
+      0.049999999999999996
+    ],
+    "questions": 20
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "sampled_minus_greedy": -0.01666666666666667,
+    "cluster_bootstrap_95": [
+      -0.06666666666666668,
+      0.03333333333333333
+    ],
+    "questions": 20
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "sampled_minus_greedy": 0.0,
+    "cluster_bootstrap_95": [
+      0.0,
+      0.0
+    ],
+    "questions": 20
+  }
+]

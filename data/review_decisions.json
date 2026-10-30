@@ -1,0 +1,1496 @@
+[
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 15,
+    "answer_sha256": "b2b300c0e0eea277b49cecc8fab65a5f6c6a957a736abc395d4bc502cd820e2d",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Числовой результат верен, но запрошенные промежуточные вычисления отсутствуют."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 11,
+    "answer_sha256": "6e3fd532f84243a29c697707b7e685a5e5c4ae77848f953df2eda68c09ef8cb5",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Certitudine не является требуемым антонимом; правильный ответ — minciună."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 4,
+    "answer_sha256": "0763e6c717a6443d15a98dbaa1bf4c1325b5472e3b9c3578f1671c30fcde642a",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Кишинёв — правильный ответ; итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 7,
+    "answer_sha256": "654eccfa6590a3416aea0b7fe5f370c6d9f0ab4d0338dcca2ae08f1c7c8440fb",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Правильное множественное число — cafele, а не cafei."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 16,
+    "answer_sha256": "219ba5e7d88fbe1110a5a2482e74b856c28ae3f40d582e40af4794fa10f660da",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "70 — правильный результат; одно деление не заменяет проверку умножением или промежуточный шаг."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 19,
+    "answer_sha256": "0e33d503938cee341ae5a0d53861f31e2160db62eb1f78cadbb7f7be0e4e58e0",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Результат 120 или 50 неверен; правильно (20)*(3)=60."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 12,
+    "answer_sha256": "d725f61f52cab4e8f8280630a2e0c114e3bc5cfc6c54a159801063c695479031",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Правильная форма — elevilor, а не elevi/ele."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 5,
+    "answer_sha256": "2f5f8600717806d3a56a5685b88892cb32614cf54f1a0b07f5ff252830876e8d",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Версальский договор не назван."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 6,
+    "answer_sha256": "fa31367243e2d0d0a18f19561ccf260d0282ca0d53b89d8c12bce39120f9b703",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Имя господаря Штефана Великого не названо."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 10,
+    "answer_sha256": "7163bfe60639ee4e6f4263007790d112d6de432559067cede2952f2db93e7370",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Наречие не названо; модель повторяет слово или предложение."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 13,
+    "answer_sha256": "f52fd4dbefc229ec2c3515579c695d02505a85c360e20fb92f46432e9c7437af",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Числовой результат верен, но запрошенные промежуточные вычисления отсутствуют."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 14,
+    "answer_sha256": "f4debc4d2a525fdf0b7f5b40c112194f531414d44682b8627a8718b210dfe8bd",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Числовой результат верен, но запрошенные промежуточные вычисления отсутствуют."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 9,
+    "answer_sha256": "6e56a83c6e2e24925cbcd0cf1b68b7908fb8899a7d7aadc765f1b473ac58ada2",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Выбран неверный вариант să vi; правильно să vii."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 5,
+    "answer_sha256": "e91c152f946aed7bec5233ebdf89055560db5fa3a14043ebcbead711fe007255",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Версальский договор не назван."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 19,
+    "answer_sha256": "a9aca32b25fa588b49b29f39295439c6f516d9a0ab50b408f0eafbfc74977591",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Результат 120 или 50 неверен; правильно (20)*(3)=60."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 20,
+    "answer_sha256": "b850cc6bf552978f470d412dcfb8875e06008c10efb4f4c19a43089c1e584ce0",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Цепочка 7²+5²=49+25=74 верна и достаточна; строгий извлекатель не принимает выражение вместо отдельного значения."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 1,
+    "answer_sha256": "64ef2e7e98258cda114c746b92517a067643240b3d00f43f7bc97957f5322727",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год указан неверно: эталон — 1859."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 8,
+    "answer_sha256": "a3c7d1674db1ba4f3fe5a9500eaa7c467394a3662068f568a230a2bdefea21c3",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Синоним iute не выбран."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 4,
+    "answer_sha256": "309495bdf05b71289edf9db7fc61a775ef48f4fda46553cd85d5524942dd4401",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Кишинёв — правильный ответ; итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 2,
+    "answer_sha256": "51ba5b33b7b798e484173c9390d092b97ddd93b19cab98da09ead0f06edf2ea9",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Назван неверный господарь; правильный ответ — Александру Иоан Куза."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 6,
+    "answer_sha256": "301af84c483c9912bdc423a8b144c91e2e87b86fa57a54a2670f51338ad68b95",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Имя господаря Штефана Великого не названо."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 18,
+    "answer_sha256": "0e1596dba5c28e81fc237886c53db404c4fbab84982d56a7d87801b640559056",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Предложено x=1 и заявлено ложное равенство -1=2."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 18,
+    "answer_sha256": "27d2c42b144d2c5e3186a315dc4c9d374327efebd949a8dffcedf675940ff65e",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "x=2 и подстановка 3*2-4=2 верны; итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 11,
+    "answer_sha256": "42287590262d2a543b7fe664eca3a426b32dbaa0f4fa288c7e6e63b3ac119d32",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Certitudine не является требуемым антонимом; правильный ответ — minciună."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 8,
+    "answer_sha256": "9bb75caf64accb43f146b48d8b6a5ab038c9b85e5034a1ed81c3b24c283148a8",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Iute выбран правильно, несмотря на неудачную формулировку; маркер отсутствует."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 17,
+    "answer_sha256": "e30233bcb4db2cd0540d245aa0685df638f7328ba61c0a91ab9fa1e4b1b429bb",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Преобразования и подстановка x=6 верны; начальная операция названа неточно, итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 3,
+    "answer_sha256": "31f6f36f234f9d506b0e799278d5650ae48a392316cc8563c74d464ae806ddca",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год указан неверно: резолюция принята в 1918 году."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 3,
+    "answer_sha256": "b4aa83af8e9058f49fe4461de7108a86d7c0c8a28c391e4e78ae2aade54fc775",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год указан неверно: резолюция принята в 1918 году."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 5,
+    "answer_sha256": "8f1896a95ec4fc4d218341692ffd6467f696b7f010c3c152890f4b47b3cff0ef",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Версальский договор не назван."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 10,
+    "answer_sha256": "9465fb4c687ad415075b350d827856f28a6952f1d828192bb057f180bcb3fdff",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Наречие не названо; модель повторяет слово или предложение."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 8,
+    "answer_sha256": "c3de5394793db4acd359decee77220cf63f16909bc3f789b88f5f4c0ab7ba715",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Синоним iute не выбран."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 14,
+    "answer_sha256": "c53bac5bde4cf45aaf3259a70912c8fe825b00145b69227be96171a232914025",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Числовой результат верен, но запрошенные промежуточные вычисления отсутствуют."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 1,
+    "answer_sha256": "266596f8be05e4fa2741609f38ea1c6b89e6f6040d5cf3851bb13014552244cb",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год указан неверно: эталон — 1859."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 12,
+    "answer_sha256": "e4a02540162132379e276677f6a23123887871059cbc98db1662691f482fe299",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Правильная форма — elevilor, а не elevi/ele."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 16,
+    "answer_sha256": "d4f32e21bc47c99f49a19f34aa3f2cefbadd75847baa47cdfdc5a7cb79ec295f",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "70 — правильный результат; одно деление не заменяет проверку умножением или промежуточный шаг."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 10,
+    "answer_sha256": "1c492149bb45a5e855395fb0d80eaad701f63540a3aa13ee16c352a732900e8c",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Наречие не названо; модель повторяет слово или предложение."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 19,
+    "answer_sha256": "6420e72d59126bd8d6a2c9e30abfde8fdb001697d388248ba9296879f4f8a331",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Результат 120 или 50 неверен; правильно (20)*(3)=60."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 18,
+    "answer_sha256": "15f2544414d57de125703c0b46fddc3066787ad8ecebb9b5bc2e99e7e0c45ff4",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "x=2, вывод и подстановка верны; текст обрывается после уже выполненной проверки, итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 19,
+    "answer_sha256": "50fcd5a1adfee00a540f44b3ea5e3a842d515ae4bfff410280b66e436645a62c",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "60 — правильный результат, но требуемые шаги отсутствуют."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 3,
+    "answer_sha256": "a25a867a163a86a7b45ce9dab8bdfcb7fa8bd5294b199fc64a866277e5a8cb1a",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год указан неверно: резолюция принята в 1918 году."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 17,
+    "answer_sha256": "33920c2f368af54b3a2110cd608f77e5e6527d7872c987c3480f947bbd1471e9",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "x=6 и подстановка верны, но заключительная фраза «уравнение эквивалентно 0» математически некорректна; объяснение целиком не засчитывается."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 18,
+    "answer_sha256": "91af772f0f59e9032da5034a83e948badb69c3fe2513d53d096e839c482aaa52",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Модель отказывается от решения и не приводит x=2."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 2,
+    "answer_sha256": "5c9dc35b8e9bae1eeda0de7167de2b80c0cfca533dcd7e2212125124aa1c1189",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Назван неверный господарь; правильный ответ — Александру Иоан Куза."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 4,
+    "answer_sha256": "825eb8017e555f16651c52a8f346dca698e3630710e505ed96e53fc0e533ad9b",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Кишинёв — правильный ответ; итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 2,
+    "answer_sha256": "5c0512fd0e6f46808df0c33ac07c32cd24e4a5d4e9332de4e36df06590beba79",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Назван неверный господарь; правильный ответ — Александру Иоан Куза."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 1,
+    "answer_sha256": "1a453435ffa063b7438f7eaa6be205b54134ecd67a8b794a25abce387a9def65",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год указан неверно: эталон — 1859."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 2,
+    "answer_sha256": "1e2c6b4f5f0bc331c9d600f211b2c90781efa65158dfdec0cb84791202075bde",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Назван неверный господарь; правильный ответ — Александру Иоан Куза."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 17,
+    "answer_sha256": "3248f7383a58807122cb9aaea50e111846f66648064ed5942ec4a9593452bc3a",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "x=6 и подстановка верны, но заключительная фраза «уравнение эквивалентно 0» математически некорректна; объяснение целиком не засчитывается."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 3,
+    "answer_sha256": "71c8ef4e0c756d26e1a4d393cd34a69904600ba9b44edee5795307f27020f80a",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год указан неверно: резолюция принята в 1918 году."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 6,
+    "answer_sha256": "d837d81e591099a4bc0f7a02765034fc6820770301af8a5d2df82d814a1c15c1",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Имя господаря Штефана Великого не названо."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 17,
+    "answer_sha256": "640b1db4cc0f2a24a3eadaee3c48f54c92fb2bdbfe2842720c60c00aa79ddc1d",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Решение x=6 не приведено; модель объявляет уравнение нерешённым."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 1,
+    "answer_sha256": "241fd030e8cf8c979e8b68f014e62c1aa593cf1f0ce3cfacd211ee9874e9ac4b",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год указан неверно: эталон — 1859."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 5,
+    "answer_sha256": "fa7b4e5fb7888687af816fe16dc68b55c79932e1d03574492d6a03fd50f7a175",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Версальский договор не назван."
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "id": 12,
+    "answer_sha256": "0907096eb955b97ce16f8c4d900c00ff4e70528e5ac0c94db0e52a09ca0dd3a8",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Правильная форма — elevilor, а не elevi/ele."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 15,
+    "answer_sha256": "6d4903040e4bcb2c93bd741054c900081208f78f19300ac377928104212653f6",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Произведению 36*12 явно присвоено правильное значение 432, но далее приведены ложные равенства 432*12=5096 и 5096/12=438. Результат засчитан, обоснование неверно."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 15,
+    "answer_sha256": "1a3efc9eeb02ba079bef47ba899ad00b788e804628ca088c40c5093f52e34535",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Произведение 432 верно; повторение значения и подписи не являются промежуточными вычислениями."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 11,
+    "answer_sha256": "96cffcd52a1c8d1451a6f2ac40c4b7059538e92b663d743669653f0954829569",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Minciună не выбран однозначно; модель повторяет вопрос или перечисляет противоречивые ответы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 4,
+    "answer_sha256": "4591e9528b6691222e1128c57a07be3a3e0af3e07ce60b50adce1a101aab0eff",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Модель повторяет вопрос, не называя Кишинёв."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 7,
+    "answer_sha256": "33ea358af77ededc1a8426d67d47efeb9c97b69c825fe5a7ae0231cd447ae25b",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Форма множественного числа cafele не приведена; модель повторяет вопрос или даёт неподходящее толкование."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 16,
+    "answer_sha256": "0b0e5b0b7a6312ff9e7f4ef1e9bdb5cf91d48888185bc9b262e19dd792d2b3e1",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "70 — правильный результат, но запрошенная проверка умножением отсутствует."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 19,
+    "answer_sha256": "0fd4143c5567d0facf191399d342211fea9f804ce4d4e6cc2ae142fa0a610509",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Разность 10-7 ошибочно заменена на -3; получено -60 вместо 60."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 11,
+    "answer_sha256": "4d4b0c875916926b909907fefbcf901b85b493a50da46d231362bf4f8c38e1d2",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Minciună не выбран однозначно; модель повторяет вопрос или перечисляет противоречивые ответы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 12,
+    "answer_sha256": "7b94c107c34464987f46ee50051ae07210f1b4cec2d7d5a853c0dff33113c19d",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Модель повторяет вопрос, не приводя форму elevilor."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 5,
+    "answer_sha256": "6139ae0b0bb0f02091ec48733532e3cb13adf3a0588833d006ea9ecc2493eb86",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Название Версальского договора не приведено."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 6,
+    "answer_sha256": "cb2cd2ffcc4c601de9ad6b8a89f3b22b4f94b196496196608941d454bebe3c51",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Штефан Великий не назван; модель повторяет инструкции или выдумывает имена."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 10,
+    "answer_sha256": "14e389d61e036f101ef145302faf299df2e7e71e58a1b40ff17bc3f1eb117d13",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Наречие не названо; модель повторяет предложение или выдаёт посторонний текст."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 13,
+    "answer_sha256": "c4647342393b2914fe930cd66b15a94f4d191db38810a99ccbb067734a376e92",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Прямое числовое равенство верно, но требуемые промежуточные вычисления отсутствуют."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 14,
+    "answer_sha256": "de516ada010f41a1c11d7063683c16c5791be9b786d64d9319d0c73d3b84a5d6",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Прямое числовое равенство верно, но требуемые промежуточные вычисления отсутствуют."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 9,
+    "answer_sha256": "e8bab6fec343813d2d6643e5cab1eccddb3682640d53b7bab79af2b19bf5fbd0",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Выбран să vi либо оба варианта приведены без решения и с неверными переводами."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 5,
+    "answer_sha256": "878ac34a7c6829ce9688b57d84adb41ea9ebd1c3ed601f12886e0bbb584cdab3",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Название Версальского договора не приведено."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 19,
+    "answer_sha256": "585ce29c2d646c9636c757c67dfe418a8fe3e622458336ce4645e80e47b76a22",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Преобразование скобок в 20*3 и результат 60 верны и достаточны; маркер отсутствует."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 20,
+    "answer_sha256": "f23e9404411577a287d9a96aed6b9698a8f502378e59e48f30da9a04824ad6c7",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Равенство 25+49=73 ложно; правильная сумма — 74."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 1,
+    "answer_sha256": "d50cf3014d2c233a898b87482c90a42c5017680eac0bb78e81dc85187c623296",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год 1859 не назван; ответ содержит посторонний текст или неверные годы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 8,
+    "answer_sha256": "b53869538dab38af060d3aaa1290eac834a04da76bf5b45309ff1e1c36c143de",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Iute не выбран однозначно; варианты и определения смешаны."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 2,
+    "answer_sha256": "cd2e12b54a3fd39da282f68ad5ca84f1b96c435e1823ba42e05ad0f4528dfaab",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Господарь Куза не назван; модель переформулирует вопрос."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 6,
+    "answer_sha256": "16e13424196d94857da920b60ebe558f32af9e590146b500164cd0197a73af3e",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Штефан Великий не назван; модель повторяет инструкции или выдумывает имена."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 18,
+    "answer_sha256": "9c4122c01e0d2c3a5639b0b95f5f8ab0a6defb1b4b2e88d508ad0aa0a41801d5",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Модель повторяет системное сообщение без решения уравнения и подстановки."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 11,
+    "answer_sha256": "1d86c66a26ccce72b996d3f714d69cac670cc5af5206917175577bde3ffc4c91",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Minciună не выбран однозначно; модель повторяет вопрос или перечисляет противоречивые ответы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 8,
+    "answer_sha256": "fb7518a2c961fb891551484c11f0643df8410465e4b31c90140f49a0bf9f63b6",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Iute не выбран однозначно; варианты и определения смешаны."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 17,
+    "answer_sha256": "f1a3a3e9f9dda7ed6862bdaa2f65cbde2e2010f729d4edc14c25464a03bfcbef",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Модель повторяет системное сообщение без решения уравнения и подстановки."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 3,
+    "answer_sha256": "bf501144a0735b771372359b6272f5f327c2d9a0bccf55204aab6c5a6bf33fa7",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год 1918 назван правильно, несмотря на неудачную формулировку; маркер отсутствует."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 3,
+    "answer_sha256": "65a996d1a17461f172d193293d1f98d73cb5b24f71a4efcdf75d384966402b99",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Правильный год не назван либо указаны противоречащие друг другу годы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 5,
+    "answer_sha256": "3fd2bbb95ce57781ad88a6a183aa24e729a1092000601e39d1aa9d77bae30c12",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Название Версальского договора не приведено."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 15,
+    "answer_sha256": "0422e5bf572da534c974b69b28e362e1233b7c67e26ed9f32cbaaf406240ab12",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Модель повторяет задачу, не приводя произведение."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 10,
+    "answer_sha256": "fca18645ab9159662c6bcf54a8c7f679d8fd8610279e5ab2ffb987c63c9fa26f",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Наречие не названо; модель повторяет предложение или выдаёт посторонний текст."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 15,
+    "answer_sha256": "d66854452e3362a05281a9a4e9ed8849576539d5bdaa51fe7a3bebb3ea3eed4b",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Произведение 432 верно; повторение значения и подписи не являются промежуточными вычислениями."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 20,
+    "answer_sha256": "5ebdabb7cbc1a7131ccaa58c3d24b579d3bb8b12bf66c7e43dd2a220401a65de",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "После 49+25=74 необоснованно добавлено 25 и заявлено ложное равенство 74+25=109; итогом принято 109."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 8,
+    "answer_sha256": "6a2ce4472b57a0f3ab60b5f76023d60a455ef58c11766c257a553bfe2b3a3cd7",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Iute не выбран однозначно; варианты и определения смешаны."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 1,
+    "answer_sha256": "92c76cb311ad354c2e0e6a4595522689c863001a0fd87f665d477143dc3ef0bf",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год 1859 не назван; ответ содержит посторонний текст или неверные годы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 16,
+    "answer_sha256": "adf246d6cb5fb8c3c9bb429761a3b10bd7855cd2e1c9c6131e051be2fcaf5a52",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Равенство 560/8=70.5 ложно; правильный результат — 70."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 7,
+    "answer_sha256": "eb1ef1fdec728441dc86ac07707d786c307452570cbe435bb36eea0cd93b6052",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Форма множественного числа cafele не приведена; модель повторяет вопрос или даёт неподходящее толкование."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 10,
+    "answer_sha256": "4c41127c6dde1f9d8827a34150812f521957948ef46a0c876fead6f48b52d205",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Наречие не названо; модель повторяет предложение или выдаёт посторонний текст."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 9,
+    "answer_sha256": "55f7dd42abec91cd6942740a9c895480cd20f4ec3fb8f927ae19b9c9cbbcd5ca",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Выбран să vi либо оба варианта приведены без решения и с неверными переводами."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 18,
+    "answer_sha256": "f1a3a3e9f9dda7ed6862bdaa2f65cbde2e2010f729d4edc14c25464a03bfcbef",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Модель повторяет системное сообщение без решения уравнения и подстановки."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 3,
+    "answer_sha256": "c6fca9af7c2d3269cd21b00120afe21abfb77d7c472092acfd19f8e79cba4f66",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Правильный год не назван либо указаны противоречащие друг другу годы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 17,
+    "answer_sha256": "9c4122c01e0d2c3a5639b0b95f5f8ab0a6defb1b4b2e88d508ad0aa0a41801d5",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Модель повторяет системное сообщение без решения уравнения и подстановки."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 2,
+    "answer_sha256": "0dc20675fc7a89cd4852183499c89bdbce986d6d3bf0bf0cd5b4a2b45444fdcc",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Господарь Куза не назван; модель переформулирует вопрос."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 10,
+    "answer_sha256": "4328cafefe8e97908d8c0cf583c12e545d2832499ceea919733d6be3f0513c48",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Наречие не названо; модель повторяет предложение или выдаёт посторонний текст."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 20,
+    "answer_sha256": "9c0b8fc31ec352f7ab8c7a358383e1579ade3897c5c0e53bcb57f7a9afe01d2c",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Сначала получено 74, затем введены не относящиеся к задаче вычитания до 2; однозначного согласованного итогового ответа нет."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 11,
+    "answer_sha256": "38373249f93dad346b68cdf127b2e065e676bbd4deb78ccca304360baed28f5a",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Minciună не выбран однозначно; модель повторяет вопрос или перечисляет противоречивые ответы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 7,
+    "answer_sha256": "384462646be652cf5a3acb52efdaa236fca359beebe4161b0c52f04b2d67fffb",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Форма множественного числа cafele не приведена; модель повторяет вопрос или даёт неподходящее толкование."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 9,
+    "answer_sha256": "951b2fa1f28b801f444c4d3db826b695a760779a969dd27f9fea22312ea6b0ed",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Выбран să vi либо оба варианта приведены без решения и с неверными переводами."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 20,
+    "answer_sha256": "72605048a49ef90e653b834c058840b663c8f07334976aa8b49fff9f37eab710",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Вычисления и результат отсутствуют."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 8,
+    "answer_sha256": "ba4a50266a733da662b62c0628efa32b60876216ee8fea556e0b5ef358113830",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Единственный предложенный синоним — iute; далее текст повторяется и обрывается, маркер отсутствует."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 1,
+    "answer_sha256": "e06e73f54051757740f4870c9f26811ce3824404f2996a4615e212bf70306e2f",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год 1859 не назван; ответ содержит посторонний текст или неверные годы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 6,
+    "answer_sha256": "c835ba35b7f2ed4b00de77febec75daa34842d29b9dfb9f597ebb9267abf4207",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Штефан Великий не назван; модель повторяет инструкции или выдумывает имена."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 14,
+    "answer_sha256": "6b03d087c96cf9c18b319608b15c0757cd40c7e868b75ebdea8dd7fb56e02e8d",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Прямое числовое равенство верно, но требуемые промежуточные вычисления отсутствуют."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 6,
+    "answer_sha256": "d99a5433cd87aebe8e43689e75ae17a091192dfa874f7ce0f1c28d63ac365bc5",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Штефан Великий не назван; модель повторяет инструкции или выдумывает имена."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 13,
+    "answer_sha256": "b44c1ba955608dcc7779b4e3fb0f0a9f1a5b01fda2b87bbef366d3b4deb66d3b",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Прямое числовое равенство верно, но требуемые промежуточные вычисления отсутствуют."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 1,
+    "answer_sha256": "64b3df24004a55df062853a64e402260b807c21589ff656db29cc15ecf005190",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год 1859 не назван; ответ содержит посторонний текст или неверные годы."
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "id": 9,
+    "answer_sha256": "786c3b03f2adf20ac5f370d134b1d37372280d5221d1fd05ef72c412a0786f38",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Выбран să vi либо оба варианта приведены без решения и с неверными переводами."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 15,
+    "answer_sha256": "d332a483cd924bed3bdd7a3c94f838d7200f1e09ffa1bf2fa86edd1641acd790",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Разложение на 36*10=360 и 36*2=72 и итог 432 верны; дополнительное тождество 36*1=36, когда оно присутствует, не меняет результата."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 15,
+    "answer_sha256": "42cac17468e43a8372068d33835be32d7489c2cee1317121af5230884b72dc31",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Разложение на 36*10=360 и 36*2=72 и итог 432 верны; дополнительное тождество 36*1=36, когда оно присутствует, не меняет результата."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 11,
+    "answer_sha256": "83ffc754d7f746548e66d8df3c42e45032ba54f18b3acec73effe31622dd27ba",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Minciună — правильный ответ, но итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 4,
+    "answer_sha256": "309495bdf05b71289edf9db7fc61a775ef48f4fda46553cd85d5524942dd4401",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Кишинёв — правильный ответ, но итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 7,
+    "answer_sha256": "8cb26374a814af847d1ae061bd9bcd6532d812585fa73e6fd9c279fdd2826677",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Множественное число указано неверно: cafii/cafea/Ceafea; правильная форма — cafele."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 16,
+    "answer_sha256": "5f50c929494ca992295f642b9d11146989e19b43093cc64111a932f3963ed729",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "70 — правильный результат, но проверка 70*8=560 не выполнена. Повторение деления или список 7*8,6*8,... не удовлетворяют условию."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 19,
+    "answer_sha256": "e672b34268770757e370db316a8614fa949cfb7058c395f82a327cd228d0e1ff",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Значения скобок 20 и 3 и произведение 60 верны; шагов достаточно."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 12,
+    "answer_sha256": "d725f61f52cab4e8f8280630a2e0c114e3bc5cfc6c54a159801063c695479031",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Elevi/ele не является требуемой формой с артиклем elevilor."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 5,
+    "answer_sha256": "baf0cb451296eaba5f6a4ca63669f0659d2cceab2bef885b6c352ac381773ab9",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Парижский мирный договор не является требуемым точным названием Версальского договора."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 6,
+    "answer_sha256": "cf33377983a49c0b94644ec29c743e1f1116cdf63e6627ce095b3994dc9d94b2",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Ștefan III de Moldavia обозначает того же человека, что и Штефан Великий; форма не совпадает с заранее заданными вариантами строгого оценщика."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 10,
+    "answer_sha256": "2f9f989c09164c7a84ac0f9f927551d9fa8e8298a369f87af39e2edab37da263",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Модель повторяет слово либо говорит только «часть речи», не называя наречие."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 13,
+    "answer_sha256": "5488962dc40246ed1d1c7b782b6db9daa49a8ddb9fe56a25a3a57c37d569aa6b",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Итог неверен: 579/523/378/323. Число 378 разложено неправильно; в жадном режиме начальное упоминание 623 не отменяет явный итог 579."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 14,
+    "answer_sha256": "7d0b901904479a4ca66fe6a4bd22e64bc440b2911354ed9cb22cb2e0c5d4a757",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Для 1000-457 правильно указано 543, однако объяснение прибавляет 457 и возвращается к 1000; требуемое вычитание не обосновано."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 9,
+    "answer_sha256": "578c4378b2fa9f038d0d0a33fff3a07a0933b379c37980a411c9a0f54b0eeee2",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Правильно выбран вариант ar trebui să vii, но маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 19,
+    "answer_sha256": "8362be0d5850086f2d1202eca9421d7a00f0276e0bfc884e640704189f0fe97a",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Значения скобок 20 и 3 и произведение 60 верны; шагов достаточно."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 13,
+    "answer_sha256": "0110f84d14595b1fdf6f84e27fe2f4632374c894017f54f55d267aacd4c38f8f",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Итог неверен: 579/523/378/323. Число 378 разложено неправильно; в жадном режиме начальное упоминание 623 не отменяет явный итог 579."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 20,
+    "answer_sha256": "ee4f483a510cd3ba9eaeedd284a0998aa234d0781d0681eb99844ba812407912",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Квадраты 49 и 25 и сумма 74 верны; промежуточных вычислений достаточно."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 1,
+    "answer_sha256": "977802c1d8022476cf142a45e7c354085e808ef14a869d5a53125309ac6bf811",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Год 1859 назван правильно, но итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 8,
+    "answer_sha256": "472debae91d197c6d43f482ad9083c0e54fc5cfa05f965fc7dda36a2942023d3",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Iute явно назван синонимом rapid, но итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 16,
+    "answer_sha256": "d4f32e21bc47c99f49a19f34aa3f2cefbadd75847baa47cdfdc5a7cb79ec295f",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "70 — правильный результат, но проверка 70*8=560 не выполнена. Повторение деления или список 7*8,6*8,... не удовлетворяют условию."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 2,
+    "answer_sha256": "753d670973af15efae6ce446a225b1f18d4117cd675aa72442b7977417abec8a",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Александру Иоан Куза назван правильно, но требуемый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 6,
+    "answer_sha256": "de952ee42cedeb1d63fdb29685ab9b4caa50abc8a287d146cd114a057b1674b9",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Александр I / Александр Великий — неверный ответ; требуется Штефан Великий."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 18,
+    "answer_sha256": "c9c658dbf620af831c979c293ceb15a1f902825b795d38ae0998e488f39a06ce",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Предложено x=6; собственная подстановка модели даёт 14 вместо 2, однако решение ошибочно объявлено правильным."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 18,
+    "answer_sha256": "67377419f906322970efa41d008ae1b4a8cf9dc5d783fb9c92c406483abc9abd",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Модель отказывается от вычисления и проверки; x=2 не приведено."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 13,
+    "answer_sha256": "41d3752d7d7d8d12614481d32e46d86a38550b1ad75108ceba1c78979096ec17",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Итог неверен: 579/523/378/323. Число 378 разложено неправильно; в жадном режиме начальное упоминание 623 не отменяет явный итог 579."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 17,
+    "answer_sha256": "e0479afddec07eb4f5ea61c427cfa2bca75dba761f0f5f162e147e22e4607cda",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Вывод x=6 и подстановка в 2x+5=17 верны; неточные формулировки не изменяют правильности равенств."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 3,
+    "answer_sha256": "4dacf822c83a1ea8e7aca94ad771132cebac3f9c497a4a879b2b94ff9457d867",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "1918 — правильный год; требуемый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 7,
+    "answer_sha256": "860e94faf33a308d4b010e915074c09b39500a14edb0d4e39c137690b235516b",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Множественное число указано неверно: cafii/cafea/Ceafea; правильная форма — cafele."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 15,
+    "answer_sha256": "7d1933a9dbc06ba44d2d93642dd4f59020f6bf4f594f17812ef1f4304c32a2e3",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Разложение на 36*10=360 и 36*2=72 и итог 432 верны; дополнительное тождество 36*1=36, когда оно присутствует, не меняет результата."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 10,
+    "answer_sha256": "e597dd58f493a7aaa2d0812d8bf2787730a0643df38259e38f0330356edb203f",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Модель повторяет слово либо говорит только «часть речи», не называя наречие."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 15,
+    "answer_sha256": "61d02c29df0d338556671e7ce1c3e04ef0acc88e09ca85b1474de3ccc277a041",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Итог 432 указан правильно, но шаг 72+24=96, названный остатком, не обосновывает произведение; объяснение логически неверно."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 20,
+    "answer_sha256": "2ff5d8ebe900eafb0be469ea18dd3162d5558f3c74461e81307be6b6be7f3e91",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Квадраты 49 и 25 и сумма 74 верны; промежуточных вычислений достаточно."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 8,
+    "answer_sha256": "8c9d065a3343ed3e97b5642ea0a4dfca7f287a997cec8aebac0506aec563062f",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Iute не выбран либо синонимия ошибочно отрицается; текст обрывается."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 12,
+    "answer_sha256": "82d7ba8091aca0e82aeda2a141ba839a2787ad286d051d347ff21d3872c90c98",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Elevi/ele не является требуемой формой с артиклем elevilor."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 16,
+    "answer_sha256": "a4176cf5148b3b3584b161ecd9822184cc342a9263ed887edfdea0129d0175ed",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Сначала указано 70, затем заявлен результат 58 через посторонние произведения; итог противоречив, проверка неверна."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 7,
+    "answer_sha256": "6268112e38eb96c404b20bcc103e576045d48eee85d0c29c59af6cd5e82c04e9",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Форма множественного числа cafele верна, но итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 19,
+    "answer_sha256": "4a40c68ef2607c90ddaeae24a0da32fc436503f41a67ba0798dca8e6d4ecefac",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Значения скобок 20 и 3 и произведение 60 верны; шагов достаточно."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 18,
+    "answer_sha256": "b93512ea5768e365e4d13fdd778a6e0b8c5af6a717a83ea3752e0858ab4ffa15",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 0,
+    "note": "Алгебраические преобразования правильно дают x=2, но ответ обрывается до требуемой проверки подстановкой."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 14,
+    "answer_sha256": "a3a0afe4046d21ee89399e5d659021e551de12c7410654b76d910ed03143077c",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Результат 543 верен, но шаги лишь повторяют операцию и не раскрывают промежуточных вычислений."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 19,
+    "answer_sha256": "827842bf81806c5396f1b7baad09681f9b00d7dde9dc6aceb20637b491e2a044",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Значения скобок 20 и 3 и произведение 60 верны; шагов достаточно."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 3,
+    "answer_sha256": "850705085511afb6e4e6e6af2b686ce1fb3cfd5d76a57c94def9db5158b15d69",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "1918 — правильный год; требуемый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 17,
+    "answer_sha256": "f9257789331547dd7b516169ba7f5a471242d0ab1226c6284c23eea35211950a",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Вывод x=6 и подстановка в 2x+5=17 верны; неточные формулировки не изменяют правильности равенств."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 18,
+    "answer_sha256": "341debbd566523711dc1c0161d30203ee6ee083502eec102569447bf724bc33d",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Названо x=2 и выполнена числовая проверка, но в качестве альтернативной подстановки указано 2+4, что неверно; второй способ обрывается."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 2,
+    "answer_sha256": "052eeb7c05d4739e661eb14ad0d8d5b95eadbcbfc0db6f592992b124fef75fdb",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Александру Иоан Куза назван правильно, но требуемый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 20,
+    "answer_sha256": "8b662a418a3ec36a67989846d9f67b977ce0f5959430927223c6683d3d37a434",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Квадраты 49 и 25 и сумма 74 верны; промежуточных вычислений достаточно."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 7,
+    "answer_sha256": "67d6750e0bc10dd9329e59db8bb1bcc5a5820cbee06444044fcf360cb1f54c0b",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Множественное число указано неверно: cafii/cafea/Ceafea; правильная форма — cafele."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 8,
+    "answer_sha256": "a6d66cf615aaa17ce50bdf1c8d50be2b6275cb8b87bf8a74c55f92ecdf8e04dc",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Iute не выбран либо синонимия ошибочно отрицается; текст обрывается."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 2,
+    "answer_sha256": "0db96fc83eac7d45bbc2e5b05024ec199cf075a97f75ff89a8bdd64dfc1714cb",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Александру Иоан Куза назван правильно, но требуемый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 17,
+    "answer_sha256": "09b8d9284f4ab8a89aa7d2df7848e7d36f736c3ec641202952a85d0cb528d41a",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 1,
+    "note": "Вывод x=6 и подстановка в 2x+5=17 верны; неточные формулировки не изменяют правильности равенств."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 6,
+    "answer_sha256": "0b24a5cab777e4e62a92f8a7a0860e18637d089565f62f6942f5fa4fa5b9dca3",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Александр I / Александр Великий — неверный ответ; требуется Штефан Великий."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 13,
+    "answer_sha256": "5520ca0e1ede9d358a09794a44b88deff3b86d4430ed3121adab99bde4ead832",
+    "content_correct": 0,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "Итог неверен: 579/523/378/323. Число 378 разложено неправильно; в жадном режиме начальное упоминание 623 не отменяет явный итог 579."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 17,
+    "answer_sha256": "a1c875e1cd5ee0494547d13b7273dc0af284272fd85fd71c8345e2946c32d5e8",
+    "content_correct": 1,
+    "steps_valid": 1,
+    "solution_complete": 0,
+    "note": "x=6 и преобразования верны, но текст обрывается на 12 + до завершения проверки; решение неполное."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 16,
+    "answer_sha256": "0cc6019e9dd33d14d4b18578d92a64ad10a7bf10a5d87e0a5d5d672041bd413b",
+    "content_correct": 1,
+    "steps_valid": 0,
+    "solution_complete": 0,
+    "note": "70 — правильный результат, но проверка 70*8=560 не выполнена. Повторение деления или список 7*8,6*8,... не удовлетворяют условию."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 5,
+    "answer_sha256": "4b301ae5af9e17fa3fce09cdc3a0ff251205a78dd333492142dfaabdffebbaa0",
+    "content_correct": 1,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Версальский договор назван правильно, но итоговый маркер отсутствует."
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "id": 12,
+    "answer_sha256": "e4a02540162132379e276677f6a23123887871059cbc98db1662691f482fe299",
+    "content_correct": 0,
+    "steps_valid": null,
+    "solution_complete": null,
+    "note": "Elevi/ele не является требуемой формой с артиклем elevilor."
+  }
+]

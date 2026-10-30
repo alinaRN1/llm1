@@ -1,0 +1,22 @@
+[
+  {"id":1,"category":"istorie","question":"În ce an a avut loc Unirea Principatelor Române (Mica Unire)?","answers":["1859"],"source":"https://www.britannica.com/place/Romania/Unification-of-Moldavia-and-Walachia"},
+  {"id":2,"category":"istorie","question":"Cine a fost ales domnitor al Moldovei și al Țării Românești în 1859?","answers":["Alexandru Ioan Cuza","Alexandru Ion Cuza","Cuza"],"source":"https://www.britannica.com/biography/Alexandru-Ioan-Cuza"},
+  {"id":3,"category":"istorie","question":"În ce an s-a adoptat la Alba Iulia rezoluția unirii Transilvaniei cu România, la 1 decembrie?","answers":["1918"],"source":"https://www.britannica.com/place/Romania/Greater-Romania"},
+  {"id":4,"category":"istorie","question":"Care este capitala Republicii Moldova?","answers":["Chișinău","Chișinăul"],"source":"https://www.britannica.com/place/Chisinau"},
+  {"id":5,"category":"istorie","question":"Cum se numește tratatul de pace semnat la 28 iunie 1919 între Germania și Puterile Aliate?","answers":["Tratatul de la Versailles","Versailles"],"source":"https://www.britannica.com/event/Treaty-of-Versailles-1919"},
+  {"id":6,"category":"istorie","question":"Ce domnitor al Moldovei a câștigat bătălia de la Vaslui din 1475?","answers":["Ștefan cel Mare","Ștefan al III-lea","Stephen the Great"],"source":"https://www.britannica.com/biography/Stephen-prince-of-Moldavia"},
+  {"id":7,"category":"romana","question":"Care este pluralul substantivului «cafea»?","answers":["cafele"],"source":"DOOM3 (2021), intrarea cafea; https://doom.lingv.ro/"},
+  {"id":8,"category":"romana","question":"Care este sinonimul lui «rapid»: «iute» sau «greoi»?","answers":["iute"],"source":"DEX, intrarea rapid; https://dexonline.ro/definitie/rapid"},
+  {"id":9,"category":"romana","question":"Alege forma corectă: «ar trebui să vii» sau «ar trebui să vi».","answers":["ar trebui să vii","să vii"],"source":"DOOM3 (2021), intrarea veni; https://doom.lingv.ro/"},
+  {"id":10,"category":"romana","question":"Ce parte de vorbire este «frumos» în propoziția «El cântă frumos»?","answers":["adverb","adverb de mod"],"source":"Gramatica limbii române, Academia Română (2005), vol. I, Adverbul"},
+  {"id":11,"category":"romana","question":"Care este antonimul lui «adevăr»: «minciună» sau «certitudine»?","answers":["minciună"],"source":"DEX, intrările adevăr și minciună; https://dexonline.ro/definitie/minciun%C4%83"},
+  {"id":12,"category":"romana","question":"Care este forma articulată de genitiv-dativ plural a substantivului «elev»?","answers":["elevilor"],"source":"DOOM3 (2021), intrarea elev; https://doom.lingv.ro/"},
+  {"id":13,"category":"matematica","question":"Calculează 245 + 378. Arată calculele intermediare.","answers":["623"],"value":"623","reference_steps":["245 + 300 = 545","545 + 78 = 623"]},
+  {"id":14,"category":"matematica","question":"Calculează 1000 - 457. Arată calculele intermediare.","answers":["543"],"value":"543","reference_steps":["1000 - 400 = 600","600 - 57 = 543"]},
+  {"id":15,"category":"matematica","question":"Calculează 36 × 12. Arată calculele intermediare.","answers":["432"],"value":"432","reference_steps":["36 * 10 = 360","36 * 2 = 72","360 + 72 = 432"]},
+  {"id":16,"category":"matematica","question":"Calculează 560 ÷ 8. Arată verificarea prin înmulțire.","answers":["70"],"value":"70","reference_steps":["560 / 8 = 70","70 * 8 = 560"]},
+  {"id":17,"category":"matematica","question":"Rezolvă ecuația 2x + 5 = 17 și verifică soluția prin substituție.","answers":["6","x = 6"],"value":"6","reference_steps":["17 - 5 = 12","12 / 2 = 6","2 * 6 + 5 = 17"]},
+  {"id":18,"category":"matematica","question":"Rezolvă ecuația 3x - 4 = 2 și verifică soluția prin substituție.","answers":["2","x = 2"],"value":"2","reference_steps":["2 + 4 = 6","6 / 3 = 2","3 * 2 - 4 = 2"]},
+  {"id":19,"category":"matematica","question":"Calculează (15 + 5) × (10 - 7). Arată calculele intermediare.","answers":["60"],"value":"60","reference_steps":["15 + 5 = 20","10 - 7 = 3","20 * 3 = 60"]},
+  {"id":20,"category":"matematica","question":"Calculează 7² + 5². Arată calculele intermediare.","answers":["74"],"value":"74","reference_steps":["7 ** 2 = 49","5 ** 2 = 25","49 + 25 = 74"]}
+]

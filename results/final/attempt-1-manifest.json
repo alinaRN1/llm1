@@ -1,0 +1,179 @@
+{
+  "status": "failed",
+  "backend": "llama-cpp-python",
+  "backend_version": "0.3.16",
+  "arguments": {
+    "repetitions": 3,
+    "threads": 4,
+    "max_new_tokens": 160
+  },
+  "models": [
+    "ai/qwen2.5:0.5B-F16",
+    "ai/smollm2:360M-F16",
+    "ai/llama3.2:1B-F16"
+  ],
+  "artifacts": [
+    {
+      "model": "ai/qwen2.5:0.5B-F16",
+      "registry": "registry-1.docker.io",
+      "manifest_digest": "sha256:3e1aad67b4cc8e3dca660fe65f9f73edb598474284256ffdd9ba460b5b35ff26",
+      "layers": [
+        {
+          "file": "config.json",
+          "digest": "sha256:f038cce14f63420473d8034f1e9cad9dd6be44fc2157b3112b30245c4da6f29f",
+          "size": 364,
+          "media_type": "application/vnd.docker.ai.model.config.v0.1+json"
+        },
+        {
+          "file": "model.gguf",
+          "digest": "sha256:f1ad9d1174ce6ab47b584d522634c47e411b75bffdffd9a4e106e21e882392e5",
+          "size": 994156864,
+          "media_type": "application/vnd.docker.ai.gguf.v3"
+        },
+        {
+          "file": "license-2.txt",
+          "digest": "sha256:609e2cb599f84aaa41d8ef29d8fdb04d164fab22e8d9292ca34a599d0f56a338",
+          "size": 12624,
+          "media_type": "application/vnd.docker.ai.license"
+        }
+      ],
+      "model_path": ".cache/oci/ai_qwen2.5/0.5B-F16/model.gguf",
+      "config": {
+        "config": {
+          "format": "gguf",
+          "quantization": "F16",
+          "parameters": "494.03 M",
+          "architecture": "qwen2",
+          "size": "942.43 MiB"
+        },
+        "descriptor": {
+          "created": "2025-04-08T15:17:06.415647+02:00"
+        },
+        "rootfs": {
+          "type": "rootfs",
+          "diff_ids": [
+            "sha256:f1ad9d1174ce6ab47b584d522634c47e411b75bffdffd9a4e106e21e882392e5",
+            "sha256:609e2cb599f84aaa41d8ef29d8fdb04d164fab22e8d9292ca34a599d0f56a338"
+          ]
+        }
+      }
+    },
+    {
+      "model": "ai/smollm2:360M-F16",
+      "registry": "registry-1.docker.io",
+      "manifest_digest": "sha256:020ef929a2866cc4079bf477583c23dc1432e37b9e73b3c20de51a3720b90ac7",
+      "layers": [
+        {
+          "file": "config.json",
+          "digest": "sha256:2f77b3d17b1b0fe244a1ca01b8c754f117066535e36d63320f401106f432fc28",
+          "size": 364,
+          "media_type": "application/vnd.docker.ai.model.config.v0.1+json"
+        },
+        {
+          "file": "model.gguf",
+          "digest": "sha256:c91efe0136f1c9ca2d4ec56d31773e552b309fa1ce944e283b2df6fa4bfdfecf",
+          "size": 725553216,
+          "media_type": "application/vnd.docker.ai.gguf.v3"
+        },
+        {
+          "file": "license-2.txt",
+          "digest": "sha256:609e2cb599f84aaa41d8ef29d8fdb04d164fab22e8d9292ca34a599d0f56a338",
+          "size": 12624,
+          "media_type": "application/vnd.docker.ai.license"
+        }
+      ],
+      "model_path": ".cache/oci/ai_smollm2/360M-F16/model.gguf",
+      "config": {
+        "config": {
+          "format": "gguf",
+          "quantization": "F16",
+          "parameters": "361.82 M",
+          "architecture": "llama",
+          "size": "690.24 MiB"
+        },
+        "descriptor": {
+          "created": "2025-04-26T22:17:02.905388+02:00"
+        },
+        "rootfs": {
+          "type": "rootfs",
+          "diff_ids": [
+            "sha256:c91efe0136f1c9ca2d4ec56d31773e552b309fa1ce944e283b2df6fa4bfdfecf",
+            "sha256:609e2cb599f84aaa41d8ef29d8fdb04d164fab22e8d9292ca34a599d0f56a338"
+          ]
+        }
+      }
+    },
+    {
+      "model": "ai/llama3.2:1B-F16",
+      "registry": "registry-1.docker.io",
+      "manifest_digest": "sha256:158533c5c78e4d5ddcc9251691e91fdab10031e4da28148c788f44c52af6dd5b",
+      "layers": [
+        {
+          "file": "config.json",
+          "digest": "sha256:72fdc484eeb74fe8ea898bc7334b9d4f42e4041b6c3f868e7a2f8701c0d18f3c",
+          "size": 434,
+          "media_type": "application/vnd.docker.ai.model.config.v0.1+json"
+        },
+        {
+          "file": "model.gguf",
+          "digest": "sha256:1f33ad43d2b85b908ff06fe7002b69806a57359b9b2617ca27d7bdea428ae146",
+          "size": 2479595360,
+          "media_type": "application/vnd.docker.ai.gguf.v3"
+        },
+        {
+          "file": "license-2.txt",
+          "digest": "sha256:0b4284c1f87029e67654c7953afa16279961632cf73dcfe33374c4c2f298fa35",
+          "size": 7712,
+          "media_type": "application/vnd.docker.ai.license"
+        },
+        {
+          "file": "license-3.txt",
+          "digest": "sha256:40e2777d7faa6beaf98400654170f414d8ab29b921b5163ad4ea0a1d39894201",
+          "size": 6021,
+          "media_type": "application/vnd.docker.ai.license"
+        }
+      ],
+      "model_path": ".cache/oci/ai_llama3.2/1B-F16/model.gguf",
+      "config": {
+        "config": {
+          "format": "gguf",
+          "quantization": "F16",
+          "parameters": "1.24 B",
+          "architecture": "llama",
+          "size": "2.30 GiB"
+        },
+        "descriptor": {
+          "created": "2025-03-25T15:02:56.754468+01:00"
+        },
+        "rootfs": {
+          "type": "rootfs",
+          "diff_ids": [
+            "sha256:1f33ad43d2b85b908ff06fe7002b69806a57359b9b2617ca27d7bdea428ae146",
+            "sha256:0b4284c1f87029e67654c7953afa16279961632cf73dcfe33374c4c2f298fa35",
+            "sha256:40e2777d7faa6beaf98400654170f414d8ab29b921b5163ad4ea0a1d39894201"
+          ]
+        }
+      }
+    }
+  ],
+  "system_prompt": "Ești un asistent educațional. Răspunde în limba română. Pentru istorie și limba română scrie doar RĂSPUNS FINAL: <răspuns>. Pentru matematică arată calculele și verificarea, apoi scrie pe o linie separată RĂSPUNS FINAL: <valoare>.",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "logical_cpus": 5,
+  "ram_bytes": 35743748096,
+  "cpu_quota": "400000 100000",
+  "gpu_used": false,
+  "weight_format": "GGUF F16",
+  "context": 1024,
+  "batch": 512,
+  "logits_all": true,
+  "prefix_cache": false,
+  "seed": 20261030,
+  "model_order_randomized": false,
+  "dataset_sha256": "cad9356f3f0165250392923b5039037ef0c93cd2e178a66e0e75eba2b23b2af4",
+  "corpus_sha256": "ce7324173ec90acd9faca3c4d42321a55e1906d53d82f594816e26eea39ce2dd",
+  "started_utc": "2026-10-30T14:53:37Z",
+  "error_type": "CalledProcessError",
+  "finished_utc": "2026-10-30T14:57:11Z"
+}

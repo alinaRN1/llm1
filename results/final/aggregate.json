@@ -1,0 +1,242 @@
+[
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "mode": "greedy",
+    "factual_exact": 0.0,
+    "factual_partial": 0.0,
+    "math_accuracy": 0.375,
+    "factual_wilson_rep0": [
+      0.0,
+      0.24249400665524085
+    ],
+    "math_wilson_rep0": [
+      0.13684428582359742,
+      0.6942576053973727
+    ],
+    "latency_median_ms": 4348.539056499703,
+    "latency_p95_ms": 13315.385891800222,
+    "ttft_median_ms": 1518.1405035000353,
+    "decode_tps_median": 13.355455812210394,
+    "generation_tokens_mean": 49.0,
+    "truncation_rate": 0.1,
+    "format_success": 0.2,
+    "cpu_seconds_sum": 1214.71552879,
+    "reference_ppl_token_weighted": 7.825951579651857,
+    "arithmetic_equations_checked": 48,
+    "arithmetic_equations_valid": 48,
+    "manual_steps_review": "reviewed",
+    "factual_content": 0.5833333333333334,
+    "math_content": 0.875,
+    "overall_content": 0.7,
+    "steps_valid_rate": 0.625,
+    "complete_solution_rate": 0.5,
+    "factual_content_wilson_rep0": [
+      0.31951131254954973,
+      0.8067396863412435
+    ],
+    "math_content_wilson_rep0": [
+      0.5291118177871464,
+      0.9775825085499433
+    ]
+  },
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "mode": "sampled",
+    "factual_exact": 0.0,
+    "factual_partial": 0.009259259259259259,
+    "math_accuracy": 0.08333333333333333,
+    "factual_wilson_rep0": [
+      0.0,
+      0.24249400665524085
+    ],
+    "math_wilson_rep0": [
+      0.02241749145005667,
+      0.4708881822128535
+    ],
+    "latency_median_ms": 3879.120306500681,
+    "latency_p95_ms": 13398.872359899584,
+    "ttft_median_ms": 1508.1988440001624,
+    "decode_tps_median": 11.683306127114939,
+    "generation_tokens_mean": 43.38333333333333,
+    "truncation_rate": 0.03333333333333333,
+    "format_success": 0.11666666666666667,
+    "cpu_seconds_sum": 1200.3988231990006,
+    "reference_ppl_token_weighted": 9.542279368784035,
+    "arithmetic_equations_checked": 45,
+    "arithmetic_equations_valid": 43,
+    "manual_steps_review": "reviewed",
+    "factual_content": 0.6111111111111112,
+    "math_content": 0.75,
+    "overall_content": 0.6666666666666666,
+    "steps_valid_rate": 0.4583333333333333,
+    "complete_solution_rate": 0.4166666666666667,
+    "factual_content_wilson_rep0": [
+      0.31951131254954973,
+      0.8067396863412435
+    ],
+    "math_content_wilson_rep0": [
+      0.40927543031016883,
+      0.9285207872478909
+    ]
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "mode": "greedy",
+    "factual_exact": 0.0,
+    "factual_partial": 0.0,
+    "math_accuracy": 0.5,
+    "factual_wilson_rep0": [
+      0.0,
+      0.24249400665524085
+    ],
+    "math_wilson_rep0": [
+      0.21521606221387757,
+      0.7847839377861224
+    ],
+    "latency_median_ms": 1149.6950729999753,
+    "latency_p95_ms": 4959.125027299978,
+    "ttft_median_ms": 580.3141350002079,
+    "decode_tps_median": 32.18731383173977,
+    "generation_tokens_mean": 36.85,
+    "truncation_rate": 0.1,
+    "format_success": 0.35,
+    "cpu_seconds_sum": 388.97977032799963,
+    "reference_ppl_token_weighted": 11.88695065782468,
+    "arithmetic_equations_checked": 9,
+    "arithmetic_equations_valid": 9,
+    "manual_steps_review": "reviewed",
+    "factual_content": 0.08333333333333333,
+    "math_content": 0.875,
+    "overall_content": 0.4,
+    "steps_valid_rate": 0.375,
+    "complete_solution_rate": 0.375,
+    "factual_content_wilson_rep0": [
+      0.014865094404917095,
+      0.35387991114111694
+    ],
+    "math_content_wilson_rep0": [
+      0.5291118177871464,
+      0.9775825085499433
+    ]
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "mode": "sampled",
+    "factual_exact": 0.0,
+    "factual_partial": 0.003472222222222222,
+    "math_accuracy": 0.4583333333333333,
+    "factual_wilson_rep0": [
+      0.0,
+      0.24249400665524085
+    ],
+    "math_wilson_rep0": [
+      0.30574239460262737,
+      0.8631557141764026
+    ],
+    "latency_median_ms": 1482.4762235000435,
+    "latency_p95_ms": 3201.049502750031,
+    "ttft_median_ms": 586.2880360002691,
+    "decode_tps_median": 22.574194058696367,
+    "generation_tokens_mean": 28.783333333333335,
+    "truncation_rate": 0.0,
+    "format_success": 0.3,
+    "cpu_seconds_sum": 412.455062703,
+    "reference_ppl_token_weighted": 29.24094713990719,
+    "arithmetic_equations_checked": 7,
+    "arithmetic_equations_valid": 6,
+    "manual_steps_review": "reviewed",
+    "factual_content": 0.1111111111111111,
+    "math_content": 0.7916666666666666,
+    "overall_content": 0.38333333333333336,
+    "steps_valid_rate": 0.16666666666666666,
+    "complete_solution_rate": 0.16666666666666666,
+    "factual_content_wilson_rep0": [
+      0.014865094404917095,
+      0.35387991114111694
+    ],
+    "math_content_wilson_rep0": [
+      0.6755924351161198,
+      1.0
+    ]
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "mode": "greedy",
+    "factual_exact": 0.0,
+    "factual_partial": 0.0,
+    "math_accuracy": 0.0,
+    "factual_wilson_rep0": [
+      0.0,
+      0.24249400665524085
+    ],
+    "math_wilson_rep0": [
+      0.0,
+      0.32440756488388023
+    ],
+    "latency_median_ms": 1931.1511370001426,
+    "latency_p95_ms": 4613.6998497498325,
+    "ttft_median_ms": 537.4626709999575,
+    "decode_tps_median": 41.84575710241893,
+    "generation_tokens_mean": 86.1,
+    "truncation_rate": 0.35,
+    "format_success": 0.15,
+    "cpu_seconds_sum": 604.1019896460007,
+    "reference_ppl_token_weighted": 7.097508117051225,
+    "arithmetic_equations_checked": 27,
+    "arithmetic_equations_valid": 24,
+    "manual_steps_review": "reviewed",
+    "factual_content": 0.16666666666666666,
+    "math_content": 0.625,
+    "overall_content": 0.35,
+    "steps_valid_rate": 0.125,
+    "complete_solution_rate": 0.125,
+    "factual_content_wilson_rep0": [
+      0.04696514218385378,
+      0.4480308622529734
+    ],
+    "math_content_wilson_rep0": [
+      0.30574239460262737,
+      0.8631557141764026
+    ]
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "mode": "sampled",
+    "factual_exact": 0.0,
+    "factual_partial": 0.0,
+    "math_accuracy": 0.0,
+    "factual_wilson_rep0": [
+      0.0,
+      0.24249400665524085
+    ],
+    "math_wilson_rep0": [
+      0.0,
+      0.32440756488388023
+    ],
+    "latency_median_ms": 1886.6414154999802,
+    "latency_p95_ms": 5054.794893150074,
+    "ttft_median_ms": 545.8142259999477,
+    "decode_tps_median": 35.74060641330464,
+    "generation_tokens_mean": 69.08333333333333,
+    "truncation_rate": 0.13333333333333333,
+    "format_success": 0.11666666666666667,
+    "cpu_seconds_sum": 576.0224089580001,
+    "reference_ppl_token_weighted": 15.28988925105449,
+    "arithmetic_equations_checked": 21,
+    "arithmetic_equations_valid": 14,
+    "manual_steps_review": "reviewed",
+    "factual_content": 0.0,
+    "math_content": 0.375,
+    "overall_content": 0.15,
+    "steps_valid_rate": 0.0,
+    "complete_solution_rate": 0.0,
+    "factual_content_wilson_rep0": [
+      0.0,
+      0.24249400665524085
+    ],
+    "math_content_wilson_rep0": [
+      0.071479212752109,
+      0.5907245696898311
+    ]
+  }
+]

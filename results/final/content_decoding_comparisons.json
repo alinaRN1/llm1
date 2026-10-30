@@ -1,0 +1,29 @@
+[
+  {
+    "model": "ai/llama3.2:1B-F16",
+    "difference": -0.03333333333333334,
+    "cluster_bootstrap_95": [
+      -0.18333333333333335,
+      0.1
+    ],
+    "questions": 20
+  },
+  {
+    "model": "ai/qwen2.5:0.5B-F16",
+    "difference": -0.01666666666666667,
+    "cluster_bootstrap_95": [
+      -0.10000000000000002,
+      0.06666666666666667
+    ],
+    "questions": 20
+  },
+  {
+    "model": "ai/smollm2:360m-f16",
+    "difference": -0.2,
+    "cluster_bootstrap_95": [
+      -0.3666666666666667,
+      -0.05
+    ],
+    "questions": 20
+  }
+]
